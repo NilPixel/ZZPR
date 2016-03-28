@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  ZZTabBar.h
 //  HalfSugarism
 //
-//  Created by zhaozheng on 16/3/27.
+//  Created by Mime97 on 16/3/28.
 //  Copyright © 2016年 zhaozheng. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ZZTabBar : UITabBar
 
 @end
-
