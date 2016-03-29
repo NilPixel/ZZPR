@@ -8,8 +8,7 @@
 
 #import "ZZPhotoGroupCell.h"
 #import <AssetsLibrary/AssetsLibrary.h>
-//rgb颜色转换 （16进制->10进制）
-#define mRGBToColor(rgb)  [UIColor colorWithRed:((float)((rgb & 0xFF0000) >> 16))/255.0 green:((float)((rgb & 0xFF00) >> 8))/255.0 blue:((float)(rgb & 0xFF))/255.0 alpha:1.0];
+
 @interface ZZPhotoGroupCell()
 @property (nonatomic, strong)ALAssetsGroup * assetsGroup;
 @property (nonatomic, weak)UIImageView * groupImageView;

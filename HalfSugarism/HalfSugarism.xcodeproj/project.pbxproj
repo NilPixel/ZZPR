@@ -20,6 +20,11 @@
 		E6037C351CA902D300B3BED0 /* ZZPlusButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E6037C341CA902D300B3BED0 /* ZZPlusButton.m */; };
 		E6037C381CA90BA300B3BED0 /* ZZPlusButtonSubClass.m in Sources */ = {isa = PBXBuildFile; fileRef = E6037C371CA90BA300B3BED0 /* ZZPlusButtonSubClass.m */; };
 		E6EEF2961CAA1F6800855540 /* ZZPhotoGroupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EEF2951CAA1F6800855540 /* ZZPhotoGroupCell.m */; };
+		E6EEF2991CAA54CE00855540 /* ZZPhotoGroupView.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EEF2981CAA54CE00855540 /* ZZPhotoGroupView.m */; };
+		E6EEF29F1CAA659700855540 /* ZZPhotoGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EEF29E1CAA659700855540 /* ZZPhotoGroupViewController.m */; };
+		E6EEF2A21CAA6E9B00855540 /* ZZPhotoListView.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EEF2A11CAA6E9B00855540 /* ZZPhotoListView.m */; };
+		E6EEF2A51CAA6ECB00855540 /* ZZPhotoListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EEF2A41CAA6ECB00855540 /* ZZPhotoListViewCell.m */; };
+		E6EEF2A81CAA75B400855540 /* ZZTapAssetView.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EEF2A71CAA75B400855540 /* ZZTapAssetView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +73,18 @@
 		E6037C371CA90BA300B3BED0 /* ZZPlusButtonSubClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZPlusButtonSubClass.m; sourceTree = "<group>"; };
 		E6EEF2941CAA1F6800855540 /* ZZPhotoGroupCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZPhotoGroupCell.h; sourceTree = "<group>"; };
 		E6EEF2951CAA1F6800855540 /* ZZPhotoGroupCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZPhotoGroupCell.m; sourceTree = "<group>"; };
+		E6EEF2971CAA54CE00855540 /* ZZPhotoGroupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZPhotoGroupView.h; sourceTree = "<group>"; };
+		E6EEF2981CAA54CE00855540 /* ZZPhotoGroupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZPhotoGroupView.m; sourceTree = "<group>"; };
+		E6EEF29A1CAA56F500855540 /* ZZHalfSugarrismPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZHalfSugarrismPrefixHeader.pch; sourceTree = "<group>"; };
+		E6EEF29C1CAA576D00855540 /* UIConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIConstant.h; sourceTree = "<group>"; };
+		E6EEF29D1CAA659700855540 /* ZZPhotoGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZPhotoGroupViewController.h; sourceTree = "<group>"; };
+		E6EEF29E1CAA659700855540 /* ZZPhotoGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZPhotoGroupViewController.m; sourceTree = "<group>"; };
+		E6EEF2A01CAA6E9B00855540 /* ZZPhotoListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZPhotoListView.h; sourceTree = "<group>"; };
+		E6EEF2A11CAA6E9B00855540 /* ZZPhotoListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZPhotoListView.m; sourceTree = "<group>"; };
+		E6EEF2A31CAA6ECB00855540 /* ZZPhotoListViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZPhotoListViewCell.h; sourceTree = "<group>"; };
+		E6EEF2A41CAA6ECB00855540 /* ZZPhotoListViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZPhotoListViewCell.m; sourceTree = "<group>"; };
+		E6EEF2A61CAA75B400855540 /* ZZTapAssetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZTapAssetView.h; sourceTree = "<group>"; };
+		E6EEF2A71CAA75B400855540 /* ZZTapAssetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZTapAssetView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +138,7 @@
 		0E324B681CA8320700A4B39B /* HalfSugarism */ = {
 			isa = PBXGroup;
 			children = (
+				E6EEF29B1CAA575100855540 /* Constant */,
 				E6037C2B1CA8CED800B3BED0 /* Utils */,
 				E6037C261CA8CAF500B3BED0 /* Main */,
 				E6037C221CA8C5A200B3BED0 /* Application */,
@@ -137,6 +155,7 @@
 				0E324B7A1CA8320700A4B39B /* Info.plist */,
 				0E324B6A1CA8320700A4B39B /* main.m */,
 				0E324B771CA8320700A4B39B /* LaunchScreen.storyboard */,
+				E6EEF29A1CAA56F500855540 /* ZZHalfSugarrismPrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -246,8 +265,26 @@
 			children = (
 				E6EEF2941CAA1F6800855540 /* ZZPhotoGroupCell.h */,
 				E6EEF2951CAA1F6800855540 /* ZZPhotoGroupCell.m */,
+				E6EEF2971CAA54CE00855540 /* ZZPhotoGroupView.h */,
+				E6EEF2981CAA54CE00855540 /* ZZPhotoGroupView.m */,
+				E6EEF29D1CAA659700855540 /* ZZPhotoGroupViewController.h */,
+				E6EEF29E1CAA659700855540 /* ZZPhotoGroupViewController.m */,
+				E6EEF2A01CAA6E9B00855540 /* ZZPhotoListView.h */,
+				E6EEF2A11CAA6E9B00855540 /* ZZPhotoListView.m */,
+				E6EEF2A31CAA6ECB00855540 /* ZZPhotoListViewCell.h */,
+				E6EEF2A41CAA6ECB00855540 /* ZZPhotoListViewCell.m */,
+				E6EEF2A61CAA75B400855540 /* ZZTapAssetView.h */,
+				E6EEF2A71CAA75B400855540 /* ZZTapAssetView.m */,
 			);
 			path = ZZPhotoPicker;
+			sourceTree = "<group>";
+		};
+		E6EEF29B1CAA575100855540 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				E6EEF29C1CAA576D00855540 /* UIConstant.h */,
+			);
+			path = Constant;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -431,12 +468,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6EEF2991CAA54CE00855540 /* ZZPhotoGroupView.m in Sources */,
+				E6EEF2A51CAA6ECB00855540 /* ZZPhotoListViewCell.m in Sources */,
 				E6EEF2961CAA1F6800855540 /* ZZPhotoGroupCell.m in Sources */,
+				E6EEF2A81CAA75B400855540 /* ZZTapAssetView.m in Sources */,
 				E6037C2A1CA8CB7900B3BED0 /* ZZTabbarControllerConfig.m in Sources */,
 				0E324B6E1CA8320700A4B39B /* AppDelegate.m in Sources */,
+				E6EEF2A21CAA6E9B00855540 /* ZZPhotoListView.m in Sources */,
 				E6037C381CA90BA300B3BED0 /* ZZPlusButtonSubClass.m in Sources */,
 				E6037C321CA9007500B3BED0 /* ZZTabBar.m in Sources */,
 				0E324B6B1CA8320700A4B39B /* main.m in Sources */,
+				E6EEF29F1CAA659700855540 /* ZZPhotoGroupViewController.m in Sources */,
 				E6037C2F1CA8CF2E00B3BED0 /* ZZTabBarController.m in Sources */,
 				E6037C351CA902D300B3BED0 /* ZZPlusButton.m in Sources */,
 			);
@@ -572,6 +614,8 @@
 			baseConfigurationReference = 5C1E854674F250F0D8F8799C /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/mime/ZZPR/HalfSugarism/HalfSugarism/ZZHalfSugarrismPrefixHeader.pch;
 				INFOPLIST_FILE = HalfSugarism/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ZZ.HalfSugarism;
@@ -584,6 +628,8 @@
 			baseConfigurationReference = 07284B80213411EA71E53478 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/mime/ZZPR/HalfSugarism/HalfSugarism/ZZHalfSugarrismPrefixHeader.pch;
 				INFOPLIST_FILE = HalfSugarism/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ZZ.HalfSugarism;
