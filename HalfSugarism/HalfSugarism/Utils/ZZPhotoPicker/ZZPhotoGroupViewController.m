@@ -9,17 +9,35 @@
 #import "ZZPhotoGroupViewController.h"
 #import "ZZPhotoGroupView.h"
 #import "Masonry.h"
+#import "ZZPhotoListView.h"
 @interface ZZPhotoGroupViewController ()<ZZPhotoGroupViewControllerProtocol>
 
 @property (nonatomic, weak) ZZPhotoGroupView *photoGroupView;
 @property (nonatomic, weak) UILabel * titleLabel;
 @property (nonatomic, weak) UIView * navBar;
 @property (nonatomic, weak) UIView * bgMaskView;
-@property (nonatomic, weak) 
+@property (nonatomic, weak) ZZPhotoListView * photoListView;
+@property (nonatomic, weak) UIImageView * selectedTip;
+@property (nonatomic, weak) UIButton * okButton;
+@property (nonatomic)BOOL isNotAllowed;
 @end
 
 @implementation ZZPhotoGroupViewController
 
+#pragma mark - init
+- (instancetype)init
+{
+    if (self = [super init]) {
+        self.view.backgroundColor = [UIColor blueColor];
+        _maximumNumberOfSelection = 10;
+        _minimumNumberOfSelection = 0;
+        _assetsFilter = [ALAssetsFilter allAssets];
+        _showEmptyGroups = NO;
+        _selectionFilter = [NSPredicate predicateWithValue:YES];
+    }
+    return self;
+}
+#pragma mark - lifecycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.

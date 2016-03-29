@@ -89,17 +89,102 @@
     };
     
     //显示的相册
-    NSUInteger type = ALAssetsGroupSavedPhotos | 
+    NSUInteger type = ALAssetsGroupSavedPhotos | ALAssetsGroupPhotoStream | ALAssetsGroupLibrary | ALAssetsGroupAlbum | ALAssetsGroupEvent | ALAssetsGroupFaces ;
+    
+    [self.assetsLibrary enumerateGroupsWithTypes:type
+                                      usingBlock:resultBlock
+                                    failureBlock:failureBlock];
     
 }
 #pragma mark - DataReload
 - (void)dataReload
 {
-    
+    //没有图片
+    if (self.group.count == 0) {
+        [self showNoAsset];
+    }
+    if (self.group.count >0 &&[_my_deleagte respondsToSelector:@selector(didSelectGroup:)]) {
+        [_my_deleagte didSelectGroup:self.group[0]];
+    }
+    [self reloadData];
 }
 #pragma mark - Not Allowed
 - (void)showNotAllowed
 {
+    [[NSNotificationCenter defaultCenter]postNotificationName:@"NotAllowedPhoto" object:nil];
+    if ([_my_deleagte respondsToSelector:@selector(didSelectGroup:)]) {
+        [_my_deleagte didSelectGroup:nil];
+    }
     
+}
+
+- (void)showNoAsset
+{
+    NSLog(@"%s",__func__);
+}
+
+#pragma mark - UITableViewDelegate
+
+- (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString * cellIdentifer = @"ZZPhotoGroupCell";
+    ZZPhotoGroupCell * cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifer];
+    if (cell == nil) {
+        cell = [[ZZPhotoGroupCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifer];
+    }
+    [cell bind:self.group[indexPath.row]];
+    if (indexPath.row == self.selectIndex) {
+        cell.backgroundColor = mRGBToColor(0xd9d9d9);
+    }
+    return cell;
+}
+
+- (NSInteger)numberOfRowsInSection:(NSInteger)section
+{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.group.count;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 60.0;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    self.selectIndex = indexPath.row;
+    [self reloadData];
+    ALAssetsGroup * groups = self.group[indexPath.row];
+    if ([_my_deleagte respondsToSelector:@selector(didSelectGroup:)]) {
+        [_my_deleagte didSelectGroup:groups];
+    }
+}
+#pragma mark - getter/setter
+- (NSMutableArray *)group
+{
+    if (!_group) {
+        _group = [[NSMutableArray alloc]init];
+    }
+    return _group;
+}
+
+#pragma mark - ALAssetsLibrary
+
+- (ALAssetsLibrary *)assetsLibrary
+{
+    if (!_assetsLibrary) {
+        static dispatch_once_t pred = 0;
+        static ALAssetsLibrary * library = nil;
+        dispatch_once(&pred, ^{
+            library = [[ALAssetsLibrary alloc]init];
+        });
+        _assetsLibrary = library;
+    }
+    return _assetsLibrary;
 }
 @end

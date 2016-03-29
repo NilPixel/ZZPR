@@ -10,6 +10,6 @@
 #define ZZHalfSugarrismPrefixHeader_pch
 
 #import "UIConstant.h"
-
+#import "Constant.h"
 
 #endif /* ZZHalfSugarrismPrefixHeader_pch */
