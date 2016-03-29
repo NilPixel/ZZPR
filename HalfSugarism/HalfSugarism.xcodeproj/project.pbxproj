@@ -19,6 +19,7 @@
 		E6037C321CA9007500B3BED0 /* ZZTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E6037C311CA9007500B3BED0 /* ZZTabBar.m */; };
 		E6037C351CA902D300B3BED0 /* ZZPlusButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E6037C341CA902D300B3BED0 /* ZZPlusButton.m */; };
 		E6037C381CA90BA300B3BED0 /* ZZPlusButtonSubClass.m in Sources */ = {isa = PBXBuildFile; fileRef = E6037C371CA90BA300B3BED0 /* ZZPlusButtonSubClass.m */; };
+		E6EEF2961CAA1F6800855540 /* ZZPhotoGroupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EEF2951CAA1F6800855540 /* ZZPhotoGroupCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,8 @@
 		E6037C341CA902D300B3BED0 /* ZZPlusButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZPlusButton.m; sourceTree = "<group>"; };
 		E6037C361CA90BA300B3BED0 /* ZZPlusButtonSubClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZPlusButtonSubClass.h; sourceTree = "<group>"; };
 		E6037C371CA90BA300B3BED0 /* ZZPlusButtonSubClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZPlusButtonSubClass.m; sourceTree = "<group>"; };
+		E6EEF2941CAA1F6800855540 /* ZZPhotoGroupCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZPhotoGroupCell.h; sourceTree = "<group>"; };
+		E6EEF2951CAA1F6800855540 /* ZZPhotoGroupCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZPhotoGroupCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +222,7 @@
 		E6037C2B1CA8CED800B3BED0 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				E6EEF2931CAA1F2F00855540 /* ZZPhotoPicker */,
 				E6037C2C1CA8CEF800B3BED0 /* ZZtabBarController */,
 			);
 			path = Utils;
@@ -235,6 +239,15 @@
 				E6037C341CA902D300B3BED0 /* ZZPlusButton.m */,
 			);
 			path = ZZtabBarController;
+			sourceTree = "<group>";
+		};
+		E6EEF2931CAA1F2F00855540 /* ZZPhotoPicker */ = {
+			isa = PBXGroup;
+			children = (
+				E6EEF2941CAA1F6800855540 /* ZZPhotoGroupCell.h */,
+				E6EEF2951CAA1F6800855540 /* ZZPhotoGroupCell.m */,
+			);
+			path = ZZPhotoPicker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -418,6 +431,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6EEF2961CAA1F6800855540 /* ZZPhotoGroupCell.m in Sources */,
 				E6037C2A1CA8CB7900B3BED0 /* ZZTabbarControllerConfig.m in Sources */,
 				0E324B6E1CA8320700A4B39B /* AppDelegate.m in Sources */,
 				E6037C381CA90BA300B3BED0 /* ZZPlusButtonSubClass.m in Sources */,
