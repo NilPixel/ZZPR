@@ -124,13 +124,43 @@
     
     ZZPhotoGroupViewController * vc = (ZZPhotoGroupViewController *)self.my_delegate;
     vc.indexPathForSelectionItem = self.indexPathsForSelectedItems;
-    if (vc.delegate && [vc.delegate respondsToSelector:@selector()]) {
-        <#statements#>
+    if (vc.delegate && [vc.delegate respondsToSelector:@selector(photoPicker:didSelectAsset:)]) {
+        [vc.delegate photoPicker:vc didDeselectAsset:asset];
     }
 }
 
 - (void)didDeselectAsset:(ALAsset *)asset
 {
-    
+    [_indexPathsForSelectedItems removeObject:asset];
+    ZZPhotoGroupViewController * vc = (ZZPhotoGroupViewController *)self.my_delegate;
+    vc.indexPathForSelectionItem = self.indexPathsForSelectedItems;
+    if (vc.delegate && [vc.delegate respondsToSelector:@selector(photoPicker:didDeselectAsset:)]) {
+        [vc.delegate photoPicker:vc didDeselectAsset:asset];
+    }
+}
+
+- (void)tapAction:(ALAsset *)asset
+{
+    if (_my_delegate && [_my_delegate respondsToSelector:@selector(tapAction:)]) {
+        [_my_delegate tapAction:asset];
+    }
+}
+
+#pragma mask - getter/setter
+
+- (NSMutableArray *)assets
+{
+    if (!_assets) {
+        _assets = [[NSMutableArray alloc]init];
+    }
+    return _assets;
+}
+
+- (NSMutableArray *)indexPathsForSelectedItems
+{
+    if (!_indexPathsForSelectedItems) {
+        _indexPathsForSelectedItems = [[NSMutableArray alloc]init];
+    }
+    return _indexPathsForSelectedItems;
 }
 @end
