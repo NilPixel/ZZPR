@@ -14,8 +14,8 @@
 
 //每次点击的相关方法
 - (BOOL)shouldSelectAsset:(ALAsset *)asset;
-- (BOOL)didSelectAsset:(ALAsset *)asset;
-- (BOOL)didDeselectAsset:(ALAsset *)asset;
+- (void)didSelectAsset:(ALAsset *)asset;
+- (void)didDeselectAsset:(ALAsset *)asset;
 
 //特殊的cell点击操作
 - (void)tapAction:(ALAsset *)asset;

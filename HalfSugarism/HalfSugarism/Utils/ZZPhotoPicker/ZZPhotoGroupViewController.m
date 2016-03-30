@@ -48,14 +48,19 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter]removeObserver:self];
+    NSLog(@"%s",__func__);
 }
-*/
 
+#pragma mark - 界面初始化
+
+- (void)setUpNavBar
+{
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem rx_barBtnItemWithTitle:@"取消"
+                                                                         titleColor:[UIColor whiteColor]
+                                                                          titleFont:[UIFont systemFontOfSize:15]
+                                                                             target:self action:@selector(cancelBtnAction:)];
+}
 @end
