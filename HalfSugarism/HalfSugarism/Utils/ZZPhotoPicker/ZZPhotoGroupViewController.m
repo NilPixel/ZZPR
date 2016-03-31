@@ -62,5 +62,40 @@
                                                                          titleColor:[UIColor whiteColor]
                                                                           titleFont:[UIFont systemFontOfSize:15]
                                                                              target:self action:@selector(cancelBtnAction:)];
+    UIView * titleView = [[UIView alloc]init];
+    titleView.bounds = CGRectMake(0, 0, 200, 64);
+    
+    UILabel * titleLabel = [[UILabel alloc]init];
+    titleLabel.textAlignment = NSTextAlignmentCenter;
+    titleLabel.textColor = [UIColor whiteColor];
+    [titleView addSubview:titleLabel];
+    [titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.mas_equalTo(titleView);
+        make.centerY.mas_equalTo(titleView);
+    }];
+    self.titleLabel = titleLabel;
+    
+    UIButton *tapBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    tapBtn.backgroundColor = [UIColor clearColor];
+    [tapBtn addTarget:self action:@selector(selectGroupAction:) forControlEvents:UIControlEventTouchUpInside];
+    [titleView addSubview:tapBtn];
+    [tapBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.width.mas_equalTo(titleLabel.mas_width).offset(50);
+        make.centerX.mas_equalTo(titleView);
+        make.centerY.mas_equalTo(titleView);
+        make.height.mas_equalTo(@44);
+    }];
+}
+
+#pragma mark - Action
+- (void)cancelBtnAction:(UIButton *)sender
+{
+    
+}
+
+#pragma mark - 相册切换
+- (void)selectGroupAction:(UIButton *)sender
+{
+    
 }
 @end
