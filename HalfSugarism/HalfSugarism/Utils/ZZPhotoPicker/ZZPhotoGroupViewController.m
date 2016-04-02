@@ -10,7 +10,7 @@
 #import "ZZPhotoGroupView.h"
 #import "Masonry.h"
 #import "ZZPhotoListView.h"
-@interface ZZPhotoGroupViewController ()<ZZPhotoGroupViewControllerProtocol>
+@interface ZZPhotoGroupViewController ()<ZZPhotoGroupViewControllerProtocol,ZZPhotoListViewProtocol,ZZPhotoGroupViewProtocol>
 
 @property (nonatomic, weak) ZZPhotoGroupView *photoGroupView;
 @property (nonatomic, weak) UILabel * titleLabel;
@@ -85,8 +85,56 @@
         make.centerY.mas_equalTo(titleView);
         make.height.mas_equalTo(@44);
     }];
+    
+    //selectTipImageView
+    UIImageView * selectTip = [[UIImageView alloc]init];
+    selectTip.image = [UIImage imageWithContentsOfFile:[[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"BoPhotoPicker.bundle/images/BoSelectGroup_tip@2x.png"]];
+    [titleView addSubview:selectTip];
+    [selectTip mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.mas_equalTo(titleLabel.mas_trailing).offset(10);
+        make.width.mas_equalTo(@8);
+        make.height.mas_equalTo(@5);
+        make.centerY.mas_equalTo(titleLabel);
+    }];
+    self.selectedTip = selectTip;
+    self.navigationItem.titleView = titleView;
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem rx_barBtnItemWithTitle:@"确定"
+                                                                          titleColor:[UIColor whiteColor]
+                                                                           titleFont:[UIFont systemFontOfSize:15] target:self
+                                                                              action:@selector(okBtnAction:)];
 }
 
+
+- (void)setUpPhotoListView
+{
+    ZZPhotoListView * collectionView = [[ZZPhotoListView alloc]init];
+    collectionView.my_delegate = self;
+    collectionView.frame = self.view.bounds;
+    [self.view addSubview:collectionView];
+    self.photoListView = collectionView;
+}
+
+- (void)setUpGroupView
+{
+    ZZPhotoGroupView * photoGroupView = [[ZZPhotoGroupView alloc]init];
+    photoGroupView.assetsFilter = self.assetsFilter;
+    photoGroupView.my_deleagte = self;
+    [self.view addSubview:photoGroupView];
+    self.photoGroupView = photoGroupView;
+    photoGroupView.hidden = YES;
+    [photoGroupView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.mas_equalTo(self.view);
+        make.top.mas_equalTo(self.view).offset(-360);
+        make.trailing.mas_equalTo(self.view);
+        make.height.mas_equalTo(@360);
+    }];
+    
+}
+
+- (void)setUpData
+{
+    [self.photoGroupView setUpGroup];
+}
 #pragma mark - Action
 - (void)cancelBtnAction:(UIButton *)sender
 {
@@ -95,6 +143,27 @@
 
 #pragma mark - 相册切换
 - (void)selectGroupAction:(UIButton *)sender
+{
+    //无权限
+    if (self.isNotAllowed) {
+        return;
+    }
+    if (self.photoGroupView.hidden) {
+        [self bgMaskView];
+        self.photoGroupView.hidden = NO;
+        [UIView animateWithDuration:0.3 animations:^{
+            self.photoGroupView.transform = CGAffineTransformMakeTranslation(0, 360);
+            self.selectedTip.transform = CGAffineTransformMakeRotation(M_PI);
+        }];
+    }
+    else
+    {
+        [self ]
+    }
+    
+}
+
+- (void)okBtnAction:(UIButton *)sender
 {
     
 }
