@@ -138,7 +138,9 @@
 #pragma mark - Action
 - (void)cancelBtnAction:(UIButton *)sender
 {
-    
+    if ([_delegate respondsToSelector:@selector(photoPickerDidCancel:)]) {
+        [_delegate photoPickerDidCancel:self];
+    }
 }
 
 #pragma mark - 相册切换
@@ -158,13 +160,124 @@
     }
     else
     {
-        [self ]
+        [self hidenGroupView];
     }
     
 }
 
+- (void)hidenGroupView
+{
+    [self.bgMaskView removeFromSuperview];
+    [UIView animateWithDuration:0.3 animations:^{
+        self.photoGroupView.transform = CGAffineTransformIdentity;
+        self.selectedTip.transform = CGAffineTransformIdentity;
+    } completion:^(BOOL finished) {
+        self.photoGroupView.hidden = YES;
+    }];
+    
+}
+
+#pragma mark - ZZPhotoGroupViewProtocol
+- (void)didSelectGroup:(ALAssetsGroup *)assetsGroup
+{
+    self.photoListView.assetsGroup = assetsGroup;
+    self.titleLabel.text = [assetsGroup valueForProperty:ALAssetsGroupPropertyName];
+    [self hidenGroupView];
+}
+
+#pragma mark - ZZPhotoListViewProtocol
+
+- (void)tapAction:(ALAsset *)asset
+{
+    if ([asset isKindOfClass:[UIImage class]]&&_delegate&&[_delegate respondsToSelector:@selector(photoPickerTapAction:)]) {
+        [_delegate photoPickerTapAction:self];
+    }
+}
 - (void)okBtnAction:(UIButton *)sender
 {
+    if (self.minimumNumberOfSelection>self.indexPathForSelectionItem.count
+        ) {
+        if (_delegate&&[_delegate respondsToSelector:@selector(photoPickerDidMinimum:)]) {
+            [_delegate photoPickerDidMinimum:self];
+        }
+    }
+    else
+    {
+        if (_delegate && [_delegate respondsToSelector:@selector(photoPicker:didSelectAssets:)]) {
+            [_delegate photoPicker:self didSelectAssets:self.indexPathForSelectionItem];
+        }
+    }
     
+}
+#pragma mark - 遮罩背景
+- (UIView *)bgMaskView
+{
+    if (_bgMaskView == nil) {
+        UIView * bgMaskView = [[UIView alloc]init];
+        bgMaskView.alpha = 0.4;
+        bgMaskView.backgroundColor = [UIColor blackColor];
+        [self.view insertSubview:bgMaskView aboveSubview:self.photoListView];
+        bgMaskView.userInteractionEnabled = YES;
+        [bgMaskView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapBgMaskView:)]];
+        [bgMaskView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.mas_equalTo(self.view);
+            make.leading.mas_equalTo(self.view);
+            make.trailing.mas_equalTo(self.view);
+            make.bottom.mas_equalTo(self.view);
+        }];
+        _bgMaskView = bgMaskView;
+    }
+    return _bgMaskView;
+}
+
+- (void)tapBgMaskView:(UITapGestureRecognizer*)sender
+{
+    if (!self.photoGroupView.hidden) {
+        [self hidenGroupView];
+    }
+}
+
+#pragma mark - 没有访问权限
+
+- (void)showNotAllowed
+{
+    //没有权限时隐藏部分控件
+    self.isNotAllowed = YES;
+    self.selectedTip.hidden = YES;
+    self.titleLabel.text = @"无权限访问相册";
+    self.okButton.hidden = YES;
+    UIAlertView *alert;
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] < 8.0) {
+        alert = [[UIAlertView alloc] initWithTitle:@"提示"
+                                           message:@"请在iPhone的“设置”-“隐私”-“照片”中，找到波波网更改"
+                                          delegate:nil
+                                 cancelButtonTitle:@"确定"
+                                 otherButtonTitles:nil, nil];
+    } else {
+        alert = [[UIAlertView alloc] initWithTitle:@"提示"
+                                           message:@"请先允许访问照片"
+                                          delegate:self
+                                 cancelButtonTitle:@"取消"
+                                 otherButtonTitles:@"前往", nil];
+    }
+    [alert show];
+}
+
+- (void)alertview:(UIAlertView *)alertView clickAtButtonIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex == 1) {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
+    }
+    
+}
+
+#pragma mark - getter/setter
+
+- (NSMutableArray*)indexPathForSelectionItem
+{
+    if (!_indexPathForSelectionItem) {
+        _indexPathForSelectionItem = [[NSMutableArray alloc]init];
+    }
+    return _indexPathForSelectionItem;
 }
 @end
