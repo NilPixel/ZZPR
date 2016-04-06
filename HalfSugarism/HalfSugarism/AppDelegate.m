@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "ZZTabbarControllerConfig.h"
 @interface AppDelegate ()
 
 @end
@@ -17,7 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-//    self.window.rootViewController =
+    self.window.rootViewController = [[ZZTabbarControllerConfig alloc]init].tabBarController;
     [self.window makeKeyWindow];
     return YES;
 }

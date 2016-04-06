@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		0E324B6B1CA8320700A4B39B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E324B6A1CA8320700A4B39B /* main.m */; };
-		0E324B6E1CA8320700A4B39B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E324B6D1CA8320700A4B39B /* AppDelegate.m */; };
 		0E324B761CA8320700A4B39B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E324B751CA8320700A4B39B /* Assets.xcassets */; };
 		0E324B791CA8320700A4B39B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E324B771CA8320700A4B39B /* LaunchScreen.storyboard */; };
 		0E324B841CA8320700A4B39B /* HalfSugarismTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E324B831CA8320700A4B39B /* HalfSugarismTests.m */; };
 		0E324B8F1CA8320700A4B39B /* HalfSugarismUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E324B8E1CA8320700A4B39B /* HalfSugarismUITests.m */; };
+		0E9361BA1CB559E800078153 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E9361B91CB559E800078153 /* AppDelegate.m */; };
 		50ED2E9018040A87C16DDD4B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4406CEBC25C0ACD529CEE37 /* libPods.a */; };
 		E6037C2A1CA8CB7900B3BED0 /* ZZTabbarControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = E6037C291CA8CB7900B3BED0 /* ZZTabbarControllerConfig.m */; };
 		E6037C2F1CA8CF2E00B3BED0 /* ZZTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6037C2E1CA8CF2E00B3BED0 /* ZZTabBarController.m */; };
@@ -48,8 +48,6 @@
 		07284B80213411EA71E53478 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		0E324B661CA8320700A4B39B /* HalfSugarism.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HalfSugarism.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E324B6A1CA8320700A4B39B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0E324B6C1CA8320700A4B39B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
-		0E324B6D1CA8320700A4B39B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../AppDelegate.m; sourceTree = "<group>"; };
 		0E324B751CA8320700A4B39B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E324B781CA8320700A4B39B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E324B7A1CA8320700A4B39B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,6 +58,8 @@
 		0E324B8E1CA8320700A4B39B /* HalfSugarismUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HalfSugarismUITests.m; sourceTree = "<group>"; };
 		0E324B901CA8320700A4B39B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E5C91431CAAC86B00E41A34 /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		0E9361B81CB559E800078153 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = HalfSugarism/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		0E9361B91CB559E800078153 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = HalfSugarism/AppDelegate.m; sourceTree = SOURCE_ROOT; };
 		5C1E854674F250F0D8F8799C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		E4406CEBC25C0ACD529CEE37 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6037C281CA8CB7900B3BED0 /* ZZTabbarControllerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZTabbarControllerConfig.h; sourceTree = "<group>"; };
@@ -214,8 +214,8 @@
 		E6037C221CA8C5A200B3BED0 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				0E324B6C1CA8320700A4B39B /* AppDelegate.h */,
-				0E324B6D1CA8320700A4B39B /* AppDelegate.m */,
+				0E9361B81CB559E800078153 /* AppDelegate.h */,
+				0E9361B91CB559E800078153 /* AppDelegate.m */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -475,7 +475,7 @@
 				E6EEF2961CAA1F6800855540 /* ZZPhotoGroupCell.m in Sources */,
 				E6EEF2A81CAA75B400855540 /* ZZTapAssetView.m in Sources */,
 				E6037C2A1CA8CB7900B3BED0 /* ZZTabbarControllerConfig.m in Sources */,
-				0E324B6E1CA8320700A4B39B /* AppDelegate.m in Sources */,
+				0E9361BA1CB559E800078153 /* AppDelegate.m in Sources */,
 				E6EEF2A21CAA6E9B00855540 /* ZZPhotoListView.m in Sources */,
 				E6037C381CA90BA300B3BED0 /* ZZPlusButtonSubClass.m in Sources */,
 				E6037C321CA9007500B3BED0 /* ZZTabBar.m in Sources */,
