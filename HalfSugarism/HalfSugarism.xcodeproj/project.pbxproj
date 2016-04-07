@@ -12,7 +12,10 @@
 		0E324B791CA8320700A4B39B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E324B771CA8320700A4B39B /* LaunchScreen.storyboard */; };
 		0E324B841CA8320700A4B39B /* HalfSugarismTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E324B831CA8320700A4B39B /* HalfSugarismTests.m */; };
 		0E324B8F1CA8320700A4B39B /* HalfSugarismUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E324B8E1CA8320700A4B39B /* HalfSugarismUITests.m */; };
-		0E9361BA1CB559E800078153 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E9361B91CB559E800078153 /* AppDelegate.m */; };
+		0EFBC38B1CB69D3800C4E8DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EFBC3891CB69D3800C4E8DA /* AppDelegate.m */; };
+		0EFBC3901CB69DB200C4E8DA /* ZZHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EFBC38F1CB69DB200C4E8DA /* ZZHomeVC.m */; };
+		0EFBC3961CB6A01000C4E8DA /* ZZHomePageHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EFBC3951CB6A01000C4E8DA /* ZZHomePageHeaderView.m */; };
+		0EFBC39A1CB6A8DB00C4E8DA /* ZZHomeBanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EFBC3991CB6A8DB00C4E8DA /* ZZHomeBanner.m */; };
 		50ED2E9018040A87C16DDD4B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4406CEBC25C0ACD529CEE37 /* libPods.a */; };
 		E6037C2A1CA8CB7900B3BED0 /* ZZTabbarControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = E6037C291CA8CB7900B3BED0 /* ZZTabbarControllerConfig.m */; };
 		E6037C2F1CA8CF2E00B3BED0 /* ZZTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6037C2E1CA8CF2E00B3BED0 /* ZZTabBarController.m */; };
@@ -58,8 +61,14 @@
 		0E324B8E1CA8320700A4B39B /* HalfSugarismUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HalfSugarismUITests.m; sourceTree = "<group>"; };
 		0E324B901CA8320700A4B39B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E5C91431CAAC86B00E41A34 /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
-		0E9361B81CB559E800078153 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = HalfSugarism/AppDelegate.h; sourceTree = SOURCE_ROOT; };
-		0E9361B91CB559E800078153 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = HalfSugarism/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		0EFBC3891CB69D3800C4E8DA /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0EFBC38A1CB69D3800C4E8DA /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0EFBC38E1CB69DB200C4E8DA /* ZZHomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZHomeVC.h; sourceTree = "<group>"; };
+		0EFBC38F1CB69DB200C4E8DA /* ZZHomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZHomeVC.m; sourceTree = "<group>"; };
+		0EFBC3941CB6A01000C4E8DA /* ZZHomePageHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZHomePageHeaderView.h; sourceTree = "<group>"; };
+		0EFBC3951CB6A01000C4E8DA /* ZZHomePageHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZHomePageHeaderView.m; sourceTree = "<group>"; };
+		0EFBC3981CB6A8DB00C4E8DA /* ZZHomeBanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZHomeBanner.h; sourceTree = "<group>"; };
+		0EFBC3991CB6A8DB00C4E8DA /* ZZHomeBanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZHomeBanner.m; sourceTree = "<group>"; };
 		5C1E854674F250F0D8F8799C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		E4406CEBC25C0ACD529CEE37 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6037C281CA8CB7900B3BED0 /* ZZTabbarControllerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZTabbarControllerConfig.h; sourceTree = "<group>"; };
@@ -139,11 +148,12 @@
 		0E324B681CA8320700A4B39B /* HalfSugarism */ = {
 			isa = PBXGroup;
 			children = (
+				0EFBC3971CB6A8AA00C4E8DA /* Model */,
+				0EFBC38C1CB69D7300C4E8DA /* Pages */,
+				0EFBC3881CB69CF700C4E8DA /* Application */,
 				E6EEF29B1CAA575100855540 /* Constant */,
 				E6037C2B1CA8CED800B3BED0 /* Utils */,
 				E6037C261CA8CAF500B3BED0 /* Main */,
-				E6037C221CA8C5A200B3BED0 /* Application */,
-				E6037C201CA8C4D400B3BED0 /* Pages */,
 				0E324B691CA8320700A4B39B /* Supporting Files */,
 			);
 			path = HalfSugarism;
@@ -179,6 +189,67 @@
 			path = HalfSugarismUITests;
 			sourceTree = "<group>";
 		};
+		0EFBC3881CB69CF700C4E8DA /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				0EFBC38A1CB69D3800C4E8DA /* AppDelegate.h */,
+				0EFBC3891CB69D3800C4E8DA /* AppDelegate.m */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		0EFBC38C1CB69D7300C4E8DA /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				0EFBC38D1CB69D9500C4E8DA /* Home */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		0EFBC38D1CB69D9500C4E8DA /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0EFBC3911CB69F4A00C4E8DA /* Widget */,
+				0EFBC38E1CB69DB200C4E8DA /* ZZHomeVC.h */,
+				0EFBC38F1CB69DB200C4E8DA /* ZZHomeVC.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		0EFBC3911CB69F4A00C4E8DA /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				0EFBC3931CB69FDC00C4E8DA /* NoHLButton */,
+				0EFBC3921CB69FC900C4E8DA /* Header */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		0EFBC3921CB69FC900C4E8DA /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				0EFBC3941CB6A01000C4E8DA /* ZZHomePageHeaderView.h */,
+				0EFBC3951CB6A01000C4E8DA /* ZZHomePageHeaderView.m */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		0EFBC3931CB69FDC00C4E8DA /* NoHLButton */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NoHLButton;
+			sourceTree = "<group>";
+		};
+		0EFBC3971CB6A8AA00C4E8DA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0EFBC3981CB6A8DB00C4E8DA /* ZZHomeBanner.h */,
+				0EFBC3991CB6A8DB00C4E8DA /* ZZHomeBanner.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		19CD00B0027FB3CE0513393A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,30 +265,6 @@
 				E4406CEBC25C0ACD529CEE37 /* libPods.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		E6037C201CA8C4D400B3BED0 /* Pages */ = {
-			isa = PBXGroup;
-			children = (
-				E6037C211CA8C50200B3BED0 /* Home */,
-			);
-			path = Pages;
-			sourceTree = "<group>";
-		};
-		E6037C211CA8C50200B3BED0 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		E6037C221CA8C5A200B3BED0 /* Application */ = {
-			isa = PBXGroup;
-			children = (
-				0E9361B81CB559E800078153 /* AppDelegate.h */,
-				0E9361B91CB559E800078153 /* AppDelegate.m */,
-			);
-			path = Application;
 			sourceTree = "<group>";
 		};
 		E6037C261CA8CAF500B3BED0 /* Main */ = {
@@ -475,14 +522,17 @@
 				E6EEF2961CAA1F6800855540 /* ZZPhotoGroupCell.m in Sources */,
 				E6EEF2A81CAA75B400855540 /* ZZTapAssetView.m in Sources */,
 				E6037C2A1CA8CB7900B3BED0 /* ZZTabbarControllerConfig.m in Sources */,
-				0E9361BA1CB559E800078153 /* AppDelegate.m in Sources */,
 				E6EEF2A21CAA6E9B00855540 /* ZZPhotoListView.m in Sources */,
 				E6037C381CA90BA300B3BED0 /* ZZPlusButtonSubClass.m in Sources */,
 				E6037C321CA9007500B3BED0 /* ZZTabBar.m in Sources */,
 				0E324B6B1CA8320700A4B39B /* main.m in Sources */,
+				0EFBC3901CB69DB200C4E8DA /* ZZHomeVC.m in Sources */,
 				E6EEF29F1CAA659700855540 /* ZZPhotoGroupViewController.m in Sources */,
 				E6037C2F1CA8CF2E00B3BED0 /* ZZTabBarController.m in Sources */,
+				0EFBC39A1CB6A8DB00C4E8DA /* ZZHomeBanner.m in Sources */,
+				0EFBC3961CB6A01000C4E8DA /* ZZHomePageHeaderView.m in Sources */,
 				E6037C351CA902D300B3BED0 /* ZZPlusButton.m in Sources */,
+				0EFBC38B1CB69D3800C4E8DA /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

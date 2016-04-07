@@ -7,7 +7,7 @@
 //
 
 #import "ZZTabbarControllerConfig.h"
-#import "ZZTabBarController.h"
+
 @interface ZZTabbarControllerConfig ()
 
 @property (nonatomic, readwrite, strong)ZZTabBarController * tabBarController;
@@ -16,9 +16,10 @@
 
 @implementation ZZTabbarControllerConfig
 
-- (void)viewDidLoad
+- (ZZTabBarController *)tabBarController
 {
-    [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
+    if (!_tabBarController) {
+        <#statements#>
+    }
 }
 @end

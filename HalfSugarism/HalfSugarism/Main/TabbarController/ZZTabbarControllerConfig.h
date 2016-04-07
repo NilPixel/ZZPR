@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "ZZTabBarController.h"
 @interface ZZTabbarControllerConfig : UITabBarController
 
-@property (nonatomic , readonly ,strong)ZZTabbarControllerConfig * tabBarController;
+@property (nonatomic , readonly ,strong)ZZTabBarController * tabBarController;
 
 @end
