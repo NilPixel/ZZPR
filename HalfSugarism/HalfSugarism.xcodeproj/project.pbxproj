@@ -12,6 +12,8 @@
 		0E324B791CA8320700A4B39B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E324B771CA8320700A4B39B /* LaunchScreen.storyboard */; };
 		0E324B841CA8320700A4B39B /* HalfSugarismTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E324B831CA8320700A4B39B /* HalfSugarismTests.m */; };
 		0E324B8F1CA8320700A4B39B /* HalfSugarismUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E324B8E1CA8320700A4B39B /* HalfSugarismUITests.m */; };
+		0EF66DEF1CB7F65900C67A38 /* ZZEntryListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF66DEE1CB7F65900C67A38 /* ZZEntryListCell.m */; };
+		0EF66DF21CB7F6B000C67A38 /* ZZEntryList.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF66DF11CB7F6B000C67A38 /* ZZEntryList.m */; };
 		0EFBC38B1CB69D3800C4E8DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EFBC3891CB69D3800C4E8DA /* AppDelegate.m */; };
 		0EFBC3901CB69DB200C4E8DA /* ZZHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EFBC38F1CB69DB200C4E8DA /* ZZHomeVC.m */; };
 		0EFBC3961CB6A01000C4E8DA /* ZZHomePageHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EFBC3951CB6A01000C4E8DA /* ZZHomePageHeaderView.m */; };
@@ -61,6 +63,10 @@
 		0E324B8E1CA8320700A4B39B /* HalfSugarismUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HalfSugarismUITests.m; sourceTree = "<group>"; };
 		0E324B901CA8320700A4B39B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E5C91431CAAC86B00E41A34 /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		0EF66DED1CB7F65900C67A38 /* ZZEntryListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZEntryListCell.h; sourceTree = "<group>"; };
+		0EF66DEE1CB7F65900C67A38 /* ZZEntryListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZEntryListCell.m; sourceTree = "<group>"; };
+		0EF66DF01CB7F6B000C67A38 /* ZZEntryList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZEntryList.h; sourceTree = "<group>"; };
+		0EF66DF11CB7F6B000C67A38 /* ZZEntryList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZEntryList.m; sourceTree = "<group>"; };
 		0EFBC3891CB69D3800C4E8DA /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		0EFBC38A1CB69D3800C4E8DA /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0EFBC38E1CB69DB200C4E8DA /* ZZHomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZHomeVC.h; sourceTree = "<group>"; };
@@ -230,6 +236,8 @@
 			children = (
 				0EFBC3941CB6A01000C4E8DA /* ZZHomePageHeaderView.h */,
 				0EFBC3951CB6A01000C4E8DA /* ZZHomePageHeaderView.m */,
+				0EF66DED1CB7F65900C67A38 /* ZZEntryListCell.h */,
+				0EF66DEE1CB7F65900C67A38 /* ZZEntryListCell.m */,
 			);
 			path = Header;
 			sourceTree = "<group>";
@@ -246,6 +254,8 @@
 			children = (
 				0EFBC3981CB6A8DB00C4E8DA /* ZZHomeBanner.h */,
 				0EFBC3991CB6A8DB00C4E8DA /* ZZHomeBanner.m */,
+				0EF66DF01CB7F6B000C67A38 /* ZZEntryList.h */,
+				0EF66DF11CB7F6B000C67A38 /* ZZEntryList.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -521,6 +531,7 @@
 				E6EEF2A51CAA6ECB00855540 /* ZZPhotoListViewCell.m in Sources */,
 				E6EEF2961CAA1F6800855540 /* ZZPhotoGroupCell.m in Sources */,
 				E6EEF2A81CAA75B400855540 /* ZZTapAssetView.m in Sources */,
+				0EF66DEF1CB7F65900C67A38 /* ZZEntryListCell.m in Sources */,
 				E6037C2A1CA8CB7900B3BED0 /* ZZTabbarControllerConfig.m in Sources */,
 				E6EEF2A21CAA6E9B00855540 /* ZZPhotoListView.m in Sources */,
 				E6037C381CA90BA300B3BED0 /* ZZPlusButtonSubClass.m in Sources */,
@@ -530,6 +541,7 @@
 				E6EEF29F1CAA659700855540 /* ZZPhotoGroupViewController.m in Sources */,
 				E6037C2F1CA8CF2E00B3BED0 /* ZZTabBarController.m in Sources */,
 				0EFBC39A1CB6A8DB00C4E8DA /* ZZHomeBanner.m in Sources */,
+				0EF66DF21CB7F6B000C67A38 /* ZZEntryList.m in Sources */,
 				0EFBC3961CB6A01000C4E8DA /* ZZHomePageHeaderView.m in Sources */,
 				E6037C351CA902D300B3BED0 /* ZZPlusButton.m in Sources */,
 				0EFBC38B1CB69D3800C4E8DA /* AppDelegate.m in Sources */,
