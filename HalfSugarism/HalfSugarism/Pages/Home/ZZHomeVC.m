@@ -7,8 +7,15 @@
 //
 
 #import "ZZHomeVC.h"
-#define NAVBAR_CHANGEPOINT 50
-@interface ZZHomeVC ()<UITableViewDelegate,UITableViewDataSource>
+#import "ZZHomePageHeaderView.h"
+#import "ZZHomePageData.h"
+#define NAVBAR_CHANGE_POINT 50
+@interface ZZHomeVC ()<UITableViewDelegate,UITableViewDataSource,ZZHomePageHeaderViewDelegate>
+@property (nonatomic, strong)ZZHomePageHeaderView *homePagewHeaderView;
+@property (nonatomic, strong)ZZHomePageData *homePageData;
+@property (nonatomic, assign)NSInteger page;//当前页码
+@property (nonatomic, strong)NSMutableArray *dataArray;//表格列表数据源
+@property (nonatomic, strong)
 
 @end
 

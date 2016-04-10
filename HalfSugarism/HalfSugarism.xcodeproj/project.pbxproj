@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0E1E20BB1CBA5C5E0032723A /* ZZNoHLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1E20BA1CBA5C5E0032723A /* ZZNoHLButton.m */; };
+		0E1E20BE1CBA76030032723A /* ZZHomePageData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1E20BD1CBA76030032723A /* ZZHomePageData.m */; };
+		0E1E20C11CBA84580032723A /* ZZHomeTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1E20C01CBA84580032723A /* ZZHomeTopic.m */; };
+		0E1E20C41CBA88190032723A /* ZZCategoryElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1E20C31CBA88190032723A /* ZZCategoryElement.m */; };
+		0E1E20C71CBA88FE0032723A /* ZZFirstPageElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1E20C61CBA88FE0032723A /* ZZFirstPageElement.m */; };
 		0E324B6B1CA8320700A4B39B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E324B6A1CA8320700A4B39B /* main.m */; };
 		0E324B761CA8320700A4B39B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E324B751CA8320700A4B39B /* Assets.xcassets */; };
 		0E324B791CA8320700A4B39B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E324B771CA8320700A4B39B /* LaunchScreen.storyboard */; };
@@ -55,6 +59,14 @@
 		07284B80213411EA71E53478 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		0E1E20B91CBA5C5E0032723A /* ZZNoHLButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZNoHLButton.h; sourceTree = "<group>"; };
 		0E1E20BA1CBA5C5E0032723A /* ZZNoHLButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZNoHLButton.m; sourceTree = "<group>"; };
+		0E1E20BC1CBA76030032723A /* ZZHomePageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZHomePageData.h; sourceTree = "<group>"; };
+		0E1E20BD1CBA76030032723A /* ZZHomePageData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZHomePageData.m; sourceTree = "<group>"; };
+		0E1E20BF1CBA84580032723A /* ZZHomeTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZHomeTopic.h; sourceTree = "<group>"; };
+		0E1E20C01CBA84580032723A /* ZZHomeTopic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZHomeTopic.m; sourceTree = "<group>"; };
+		0E1E20C21CBA88190032723A /* ZZCategoryElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZCategoryElement.h; sourceTree = "<group>"; };
+		0E1E20C31CBA88190032723A /* ZZCategoryElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZCategoryElement.m; sourceTree = "<group>"; };
+		0E1E20C51CBA88FE0032723A /* ZZFirstPageElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZFirstPageElement.h; sourceTree = "<group>"; };
+		0E1E20C61CBA88FE0032723A /* ZZFirstPageElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZFirstPageElement.m; sourceTree = "<group>"; };
 		0E324B661CA8320700A4B39B /* HalfSugarism.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HalfSugarism.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E324B6A1CA8320700A4B39B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0E324B751CA8320700A4B39B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -274,6 +286,14 @@
 				0EFBC3991CB6A8DB00C4E8DA /* ZZHomeBanner.m */,
 				0EF66DF01CB7F6B000C67A38 /* ZZEntryList.h */,
 				0EF66DF11CB7F6B000C67A38 /* ZZEntryList.m */,
+				0E1E20BC1CBA76030032723A /* ZZHomePageData.h */,
+				0E1E20BD1CBA76030032723A /* ZZHomePageData.m */,
+				0E1E20BF1CBA84580032723A /* ZZHomeTopic.h */,
+				0E1E20C01CBA84580032723A /* ZZHomeTopic.m */,
+				0E1E20C21CBA88190032723A /* ZZCategoryElement.h */,
+				0E1E20C31CBA88190032723A /* ZZCategoryElement.m */,
+				0E1E20C51CBA88FE0032723A /* ZZFirstPageElement.h */,
+				0E1E20C61CBA88FE0032723A /* ZZFirstPageElement.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -547,16 +567,19 @@
 			files = (
 				E6EEF2991CAA54CE00855540 /* ZZPhotoGroupView.m in Sources */,
 				E6EEF2A51CAA6ECB00855540 /* ZZPhotoListViewCell.m in Sources */,
+				0E1E20C71CBA88FE0032723A /* ZZFirstPageElement.m in Sources */,
 				E6EEF2961CAA1F6800855540 /* ZZPhotoGroupCell.m in Sources */,
 				E6EEF2A81CAA75B400855540 /* ZZTapAssetView.m in Sources */,
 				0EF66DEF1CB7F65900C67A38 /* ZZEntryListCell.m in Sources */,
 				E6037C2A1CA8CB7900B3BED0 /* ZZTabbarControllerConfig.m in Sources */,
 				E6EEF2A21CAA6E9B00855540 /* ZZPhotoListView.m in Sources */,
+				0E1E20C41CBA88190032723A /* ZZCategoryElement.m in Sources */,
 				E6037C381CA90BA300B3BED0 /* ZZPlusButtonSubClass.m in Sources */,
 				E6037C321CA9007500B3BED0 /* ZZTabBar.m in Sources */,
 				0E324B6B1CA8320700A4B39B /* main.m in Sources */,
 				0E1E20BB1CBA5C5E0032723A /* ZZNoHLButton.m in Sources */,
 				0EFBC3901CB69DB200C4E8DA /* ZZHomeVC.m in Sources */,
+				0E1E20C11CBA84580032723A /* ZZHomeTopic.m in Sources */,
 				E6EEF29F1CAA659700855540 /* ZZPhotoGroupViewController.m in Sources */,
 				E6037C2F1CA8CF2E00B3BED0 /* ZZTabBarController.m in Sources */,
 				0EFBC39A1CB6A8DB00C4E8DA /* ZZHomeBanner.m in Sources */,
@@ -564,6 +587,7 @@
 				0EF66DF21CB7F6B000C67A38 /* ZZEntryList.m in Sources */,
 				0EFBC3961CB6A01000C4E8DA /* ZZHomePageHeaderView.m in Sources */,
 				E6037C351CA902D300B3BED0 /* ZZPlusButton.m in Sources */,
+				0E1E20BE1CBA76030032723A /* ZZHomePageData.m in Sources */,
 				0EFBC38B1CB69D3800C4E8DA /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
