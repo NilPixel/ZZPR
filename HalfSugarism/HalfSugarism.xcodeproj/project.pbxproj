@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E1E20BB1CBA5C5E0032723A /* ZZNoHLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1E20BA1CBA5C5E0032723A /* ZZNoHLButton.m */; };
 		0E324B6B1CA8320700A4B39B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E324B6A1CA8320700A4B39B /* main.m */; };
 		0E324B761CA8320700A4B39B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E324B751CA8320700A4B39B /* Assets.xcassets */; };
 		0E324B791CA8320700A4B39B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E324B771CA8320700A4B39B /* LaunchScreen.storyboard */; };
 		0E324B841CA8320700A4B39B /* HalfSugarismTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E324B831CA8320700A4B39B /* HalfSugarismTests.m */; };
 		0E324B8F1CA8320700A4B39B /* HalfSugarismUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E324B8E1CA8320700A4B39B /* HalfSugarismUITests.m */; };
+		0EC5336B1CB8A2E90053586F /* UIImageView+ZZExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC5336A1CB8A2E90053586F /* UIImageView+ZZExtension.m */; };
 		0EF66DEF1CB7F65900C67A38 /* ZZEntryListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF66DEE1CB7F65900C67A38 /* ZZEntryListCell.m */; };
 		0EF66DF21CB7F6B000C67A38 /* ZZEntryList.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF66DF11CB7F6B000C67A38 /* ZZEntryList.m */; };
 		0EFBC38B1CB69D3800C4E8DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EFBC3891CB69D3800C4E8DA /* AppDelegate.m */; };
@@ -51,6 +53,8 @@
 
 /* Begin PBXFileReference section */
 		07284B80213411EA71E53478 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		0E1E20B91CBA5C5E0032723A /* ZZNoHLButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZNoHLButton.h; sourceTree = "<group>"; };
+		0E1E20BA1CBA5C5E0032723A /* ZZNoHLButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZNoHLButton.m; sourceTree = "<group>"; };
 		0E324B661CA8320700A4B39B /* HalfSugarism.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HalfSugarism.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E324B6A1CA8320700A4B39B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0E324B751CA8320700A4B39B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 		0E324B8E1CA8320700A4B39B /* HalfSugarismUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HalfSugarismUITests.m; sourceTree = "<group>"; };
 		0E324B901CA8320700A4B39B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E5C91431CAAC86B00E41A34 /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		0EC533691CB8A2E90053586F /* UIImageView+ZZExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+ZZExtension.h"; sourceTree = "<group>"; };
+		0EC5336A1CB8A2E90053586F /* UIImageView+ZZExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+ZZExtension.m"; sourceTree = "<group>"; };
 		0EF66DED1CB7F65900C67A38 /* ZZEntryListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZEntryListCell.h; sourceTree = "<group>"; };
 		0EF66DEE1CB7F65900C67A38 /* ZZEntryListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZEntryListCell.m; sourceTree = "<group>"; };
 		0EF66DF01CB7F6B000C67A38 /* ZZEntryList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZEntryList.h; sourceTree = "<group>"; };
@@ -154,6 +160,7 @@
 		0E324B681CA8320700A4B39B /* HalfSugarism */ = {
 			isa = PBXGroup;
 			children = (
+				0EC533681CB8A1E10053586F /* Extension */,
 				0EFBC3971CB6A8AA00C4E8DA /* Model */,
 				0EFBC38C1CB69D7300C4E8DA /* Pages */,
 				0EFBC3881CB69CF700C4E8DA /* Application */,
@@ -193,6 +200,15 @@
 				0E324B901CA8320700A4B39B /* Info.plist */,
 			);
 			path = HalfSugarismUITests;
+			sourceTree = "<group>";
+		};
+		0EC533681CB8A1E10053586F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0EC533691CB8A2E90053586F /* UIImageView+ZZExtension.h */,
+				0EC5336A1CB8A2E90053586F /* UIImageView+ZZExtension.m */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		0EFBC3881CB69CF700C4E8DA /* Application */ = {
@@ -245,6 +261,8 @@
 		0EFBC3931CB69FDC00C4E8DA /* NoHLButton */ = {
 			isa = PBXGroup;
 			children = (
+				0E1E20B91CBA5C5E0032723A /* ZZNoHLButton.h */,
+				0E1E20BA1CBA5C5E0032723A /* ZZNoHLButton.m */,
 			);
 			path = NoHLButton;
 			sourceTree = "<group>";
@@ -537,10 +555,12 @@
 				E6037C381CA90BA300B3BED0 /* ZZPlusButtonSubClass.m in Sources */,
 				E6037C321CA9007500B3BED0 /* ZZTabBar.m in Sources */,
 				0E324B6B1CA8320700A4B39B /* main.m in Sources */,
+				0E1E20BB1CBA5C5E0032723A /* ZZNoHLButton.m in Sources */,
 				0EFBC3901CB69DB200C4E8DA /* ZZHomeVC.m in Sources */,
 				E6EEF29F1CAA659700855540 /* ZZPhotoGroupViewController.m in Sources */,
 				E6037C2F1CA8CF2E00B3BED0 /* ZZTabBarController.m in Sources */,
 				0EFBC39A1CB6A8DB00C4E8DA /* ZZHomeBanner.m in Sources */,
+				0EC5336B1CB8A2E90053586F /* UIImageView+ZZExtension.m in Sources */,
 				0EF66DF21CB7F6B000C67A38 /* ZZEntryList.m in Sources */,
 				0EFBC3961CB6A01000C4E8DA /* ZZHomePageHeaderView.m in Sources */,
 				E6037C351CA902D300B3BED0 /* ZZPlusButton.m in Sources */,

@@ -16,7 +16,7 @@
 #import <Masonry.h>
 #import <MJRefresh.h>
 #import <MJExtension.h>
-
+#import <YYWebImage.h>
 
 
 #endif /* ZZHalfSugarrismPrefixHeader_pch */

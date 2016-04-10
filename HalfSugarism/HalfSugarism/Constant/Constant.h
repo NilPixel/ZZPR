@@ -16,6 +16,7 @@
 #define NSLog(FORMAT, ...) nil
 #endif
 
-
+#define kScreen_Height   ([UIScreen mainScreen].bounds.size.height)
+#define kScreen_Width    ([UIScreen mainScreen].bounds.size.width)
 
 #endif /* Constant_h */

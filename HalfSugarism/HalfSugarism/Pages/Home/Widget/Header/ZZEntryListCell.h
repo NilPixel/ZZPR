@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class ZZEntryList;
 @interface ZZEntryListCell : UICollectionViewCell
-
+@property (nonatomic, strong)ZZEntryList * entryList;
 @end
