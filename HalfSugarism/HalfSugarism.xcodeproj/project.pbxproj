@@ -30,6 +30,9 @@
 		E6037C321CA9007500B3BED0 /* ZZTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E6037C311CA9007500B3BED0 /* ZZTabBar.m */; };
 		E6037C351CA902D300B3BED0 /* ZZPlusButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E6037C341CA902D300B3BED0 /* ZZPlusButton.m */; };
 		E6037C381CA90BA300B3BED0 /* ZZPlusButtonSubClass.m in Sources */ = {isa = PBXBuildFile; fileRef = E6037C371CA90BA300B3BED0 /* ZZPlusButtonSubClass.m */; };
+		E6D26D621CBB4C6F00C4A74F /* ZZLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D26D611CBB4C6F00C4A74F /* ZZLoadingView.m */; };
+		E6D26D651CBB8F0F00C4A74F /* ZZPageLoadFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D26D641CBB8F0F00C4A74F /* ZZPageLoadFooterView.m */; };
+		E6D26D691CBB9D9900C4A74F /* UINavigationBar+Awesome.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D26D681CBB9D9900C4A74F /* UINavigationBar+Awesome.m */; };
 		E6EEF2961CAA1F6800855540 /* ZZPhotoGroupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EEF2951CAA1F6800855540 /* ZZPhotoGroupCell.m */; };
 		E6EEF2991CAA54CE00855540 /* ZZPhotoGroupView.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EEF2981CAA54CE00855540 /* ZZPhotoGroupView.m */; };
 		E6EEF29F1CAA659700855540 /* ZZPhotoGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EEF29E1CAA659700855540 /* ZZPhotoGroupViewController.m */; };
@@ -105,6 +108,12 @@
 		E6037C341CA902D300B3BED0 /* ZZPlusButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZPlusButton.m; sourceTree = "<group>"; };
 		E6037C361CA90BA300B3BED0 /* ZZPlusButtonSubClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZPlusButtonSubClass.h; sourceTree = "<group>"; };
 		E6037C371CA90BA300B3BED0 /* ZZPlusButtonSubClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZPlusButtonSubClass.m; sourceTree = "<group>"; };
+		E6D26D601CBB4C6F00C4A74F /* ZZLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZLoadingView.h; sourceTree = "<group>"; };
+		E6D26D611CBB4C6F00C4A74F /* ZZLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZLoadingView.m; sourceTree = "<group>"; };
+		E6D26D631CBB8F0F00C4A74F /* ZZPageLoadFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZPageLoadFooterView.h; sourceTree = "<group>"; };
+		E6D26D641CBB8F0F00C4A74F /* ZZPageLoadFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZPageLoadFooterView.m; sourceTree = "<group>"; };
+		E6D26D671CBB9D9900C4A74F /* UINavigationBar+Awesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Awesome.h"; sourceTree = "<group>"; };
+		E6D26D681CBB9D9900C4A74F /* UINavigationBar+Awesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Awesome.m"; sourceTree = "<group>"; };
 		E6EEF2941CAA1F6800855540 /* ZZPhotoGroupCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZPhotoGroupCell.h; sourceTree = "<group>"; };
 		E6EEF2951CAA1F6800855540 /* ZZPhotoGroupCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZPhotoGroupCell.m; sourceTree = "<group>"; };
 		E6EEF2971CAA54CE00855540 /* ZZPhotoGroupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZPhotoGroupView.h; sourceTree = "<group>"; };
@@ -318,6 +327,7 @@
 		E6037C261CA8CAF500B3BED0 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				E6D26D5F1CBB4C3D00C4A74F /* Loading */,
 				E6037C271CA8CB1C00B3BED0 /* TabbarController */,
 			);
 			path = Main;
@@ -337,6 +347,7 @@
 		E6037C2B1CA8CED800B3BED0 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				E6D26D661CBB9D7800C4A74F /* NavigationBar */,
 				E6EEF2931CAA1F2F00855540 /* ZZPhotoPicker */,
 				E6037C2C1CA8CEF800B3BED0 /* ZZtabBarController */,
 			);
@@ -354,6 +365,26 @@
 				E6037C341CA902D300B3BED0 /* ZZPlusButton.m */,
 			);
 			path = ZZtabBarController;
+			sourceTree = "<group>";
+		};
+		E6D26D5F1CBB4C3D00C4A74F /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				E6D26D601CBB4C6F00C4A74F /* ZZLoadingView.h */,
+				E6D26D611CBB4C6F00C4A74F /* ZZLoadingView.m */,
+				E6D26D631CBB8F0F00C4A74F /* ZZPageLoadFooterView.h */,
+				E6D26D641CBB8F0F00C4A74F /* ZZPageLoadFooterView.m */,
+			);
+			path = Loading;
+			sourceTree = "<group>";
+		};
+		E6D26D661CBB9D7800C4A74F /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				E6D26D671CBB9D9900C4A74F /* UINavigationBar+Awesome.h */,
+				E6D26D681CBB9D9900C4A74F /* UINavigationBar+Awesome.m */,
+			);
+			path = NavigationBar;
 			sourceTree = "<group>";
 		};
 		E6EEF2931CAA1F2F00855540 /* ZZPhotoPicker */ = {
@@ -570,6 +601,7 @@
 				0E1E20C71CBA88FE0032723A /* ZZFirstPageElement.m in Sources */,
 				E6EEF2961CAA1F6800855540 /* ZZPhotoGroupCell.m in Sources */,
 				E6EEF2A81CAA75B400855540 /* ZZTapAssetView.m in Sources */,
+				E6D26D621CBB4C6F00C4A74F /* ZZLoadingView.m in Sources */,
 				0EF66DEF1CB7F65900C67A38 /* ZZEntryListCell.m in Sources */,
 				E6037C2A1CA8CB7900B3BED0 /* ZZTabbarControllerConfig.m in Sources */,
 				E6EEF2A21CAA6E9B00855540 /* ZZPhotoListView.m in Sources */,
@@ -577,6 +609,7 @@
 				E6037C381CA90BA300B3BED0 /* ZZPlusButtonSubClass.m in Sources */,
 				E6037C321CA9007500B3BED0 /* ZZTabBar.m in Sources */,
 				0E324B6B1CA8320700A4B39B /* main.m in Sources */,
+				E6D26D691CBB9D9900C4A74F /* UINavigationBar+Awesome.m in Sources */,
 				0E1E20BB1CBA5C5E0032723A /* ZZNoHLButton.m in Sources */,
 				0EFBC3901CB69DB200C4E8DA /* ZZHomeVC.m in Sources */,
 				0E1E20C11CBA84580032723A /* ZZHomeTopic.m in Sources */,
@@ -584,6 +617,7 @@
 				E6037C2F1CA8CF2E00B3BED0 /* ZZTabBarController.m in Sources */,
 				0EFBC39A1CB6A8DB00C4E8DA /* ZZHomeBanner.m in Sources */,
 				0EC5336B1CB8A2E90053586F /* UIImageView+ZZExtension.m in Sources */,
+				E6D26D651CBB8F0F00C4A74F /* ZZPageLoadFooterView.m in Sources */,
 				0EF66DF21CB7F6B000C67A38 /* ZZEntryList.m in Sources */,
 				0EFBC3961CB6A01000C4E8DA /* ZZHomePageHeaderView.m in Sources */,
 				E6037C351CA902D300B3BED0 /* ZZPlusButton.m in Sources */,
