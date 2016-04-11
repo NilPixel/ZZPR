@@ -12,6 +12,7 @@
 #import "ZZLoadingView.h"
 #import "ZZPageLoadFooterView.h"
 #import "UINavigationBar+Awesome.h"
+#import "UIScrollView+PullToRefreshCoreText.h"
 #define NAVBAR_CHANGE_POINT 50
 @interface ZZHomeVC ()<UITableViewDelegate,UITableViewDataSource,ZZHomePageHeaderViewDelegate>
 @property (nonatomic, strong)ZZHomePageHeaderView *homePagewHeaderView;
@@ -58,12 +59,39 @@
 - (void)setUpSubViews
 {
     self.navigationItem.titleView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@""]];
-    self.navigationItem.leftBarButtonItem = [UIBarButtonItem rx_barBtnItemWithNmlImg:@"" hltImg:@"" target:self action:@selector(searchBtnClick)];
-    self.navigationItem.rightBarButtonItem = [UIBarButtonItem rx_barBtnItemWithNmlImg:@"" hltImg:@"" target:self action:@selector(signBtnClick)];
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem rx_barBtnItemWithNmlImg:@""
+                                                                              hltImg:@""
+                                                                              target:self
+                                                                              action:@selector(searchBtnClick)];
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem rx_barBtnItemWithNmlImg:@""
+                                                                               hltImg:@""
+                                                                               target:self
+                                                                               action:@selector(signBtnClick)];
     
     [self.navigationItem.titleView setAlpha:0.0];
     [self.navigationItem.leftBarButtonItem.customView setAlpha:0.0];
-    [self.]
+    [self.navigationItem.rightBarButtonItem.customView setAlpha:0.0];
+    
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    [self.view addSubview:self.tableView];
+    [self.view addSubview:self.loadingView];
+    
+    __weak typeof(self) weakSelf = self;
+    self.pageLoadFooterView = [ZZPageLoadFooterView footerWithRefreshingBlock:^{
+        [weakSelf loadDataFromStart:NO];
+    }];
+    self.pageLoadFooterView.frame = CGRectMake(0, 0, kScreen_Width, 44);
+    self.tableView.tableFooterView = self.pageLoadFooterView;
+    [self.tableView addPullToRefreshWithPullText:@"C'est La Vie"
+                                   pullTextColor:[UIColor colorWithHexString:@"#cb6e76"]
+                                    pullTextFont:DefaultTextFont
+                                  refreshingText:@"La Vie est belle"
+                             refreshingTextColor:[UIColor purpleColor]
+                              refreshingTextFont:DefaultTextFont
+                                          action:^{
+        [weakSelf loadDataFromStart:YES];
+    }];
+    
 }
 
 #pragma mark - event responseder
@@ -75,6 +103,14 @@
 
 - (void)signBtnClick
 {
+    
+}
+
+- (void)loadDataFromStart:(BOOL)boolean
+{
+    if (boolean) {
+        self.page = 0;
+    }
     
 }
 @end
