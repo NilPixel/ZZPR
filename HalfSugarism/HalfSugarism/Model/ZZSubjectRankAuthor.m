@@ -1,14 +1,14 @@
 //
-//  ZZSubjectAuthor.m
+//  ZZSubjectRankAuthor.m
 //  HalfSugarism
 //
-//  Created by zhaozheng on 16/4/11.
+//  Created by zhaozheng on 16/4/12.
 //  Copyright © 2016年 zhaozheng. All rights reserved.
 //
 
-#import "ZZSubjectAuthor.h"
+#import "ZZSubjectRankAuthor.h"
 
-@implementation ZZSubjectAuthor
+@implementation ZZSubjectRankAuthor
 + (NSString *)mj_replacedKeyFromPropertyName121:(NSString *)propertyName
 {
     return [propertyName mj_underlineFromCamel];

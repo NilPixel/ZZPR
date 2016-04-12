@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "ZZHomePageData.h"
-
+#import "ZZCommunitySubject.h"
 @interface ZZHomePageManager : NSObject
 
 @end

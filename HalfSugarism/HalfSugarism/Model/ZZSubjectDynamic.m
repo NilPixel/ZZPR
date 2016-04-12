@@ -7,7 +7,15 @@
 //
 
 #import "ZZSubjectDynamic.h"
-
+#import "ZZSubjectAuthor.h"
+#import "ZZSubjectRankAuthor.h"
 @implementation ZZSubjectDynamic
-
++ (NSDictionary *)mj_objectClassInArray
+{
+    return @{@"rankList":[ZZSubjectRankAuthor class]};
+}
++ (NSString *)mj_replacedKeyFromPropertyName121:(NSString *)propertyName
+{
+    return [propertyName mj_underlineFromCamel];
+}
 @end

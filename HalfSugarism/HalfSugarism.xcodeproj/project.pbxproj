@@ -18,6 +18,7 @@
 		0E324B841CA8320700A4B39B /* HalfSugarismTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E324B831CA8320700A4B39B /* HalfSugarismTests.m */; };
 		0E324B8F1CA8320700A4B39B /* HalfSugarismUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E324B8E1CA8320700A4B39B /* HalfSugarismUITests.m */; };
 		0EC5336B1CB8A2E90053586F /* UIImageView+ZZExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC5336A1CB8A2E90053586F /* UIImageView+ZZExtension.m */; };
+		0EC8AC061CBD40E2009AC336 /* ZZSubjectRankAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC8AC051CBD40E2009AC336 /* ZZSubjectRankAuthor.m */; };
 		0EEAEBDB1CBBE9BC0008F86A /* Mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EEAEBD61CBBE9BC0008F86A /* Mask.png */; };
 		0EEAEBDC1CBBE9BC0008F86A /* PullToRefreshCoreTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EEAEBD81CBBE9BC0008F86A /* PullToRefreshCoreTextView.m */; };
 		0EEAEBDD1CBBE9BC0008F86A /* UIScrollView+PullToRefreshCoreText.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EEAEBDA1CBBE9BC0008F86A /* UIScrollView+PullToRefreshCoreText.m */; };
@@ -91,6 +92,8 @@
 		0E5C91431CAAC86B00E41A34 /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
 		0EC533691CB8A2E90053586F /* UIImageView+ZZExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+ZZExtension.h"; sourceTree = "<group>"; };
 		0EC5336A1CB8A2E90053586F /* UIImageView+ZZExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+ZZExtension.m"; sourceTree = "<group>"; };
+		0EC8AC041CBD40E2009AC336 /* ZZSubjectRankAuthor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZSubjectRankAuthor.h; sourceTree = "<group>"; };
+		0EC8AC051CBD40E2009AC336 /* ZZSubjectRankAuthor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZSubjectRankAuthor.m; sourceTree = "<group>"; };
 		0EEAEBD61CBBE9BC0008F86A /* Mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mask.png; sourceTree = "<group>"; };
 		0EEAEBD71CBBE9BC0008F86A /* PullToRefreshCoreTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PullToRefreshCoreTextView.h; sourceTree = "<group>"; };
 		0EEAEBD81CBBE9BC0008F86A /* PullToRefreshCoreTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PullToRefreshCoreTextView.m; sourceTree = "<group>"; };
@@ -351,6 +354,8 @@
 				0EEAEBE61CBBEE500008F86A /* ZZSubjectDynamic.m */,
 				0EEAEBE81CBBEE650008F86A /* ZZSubjectAuthor.h */,
 				0EEAEBE91CBBEE650008F86A /* ZZSubjectAuthor.m */,
+				0EC8AC041CBD40E2009AC336 /* ZZSubjectRankAuthor.h */,
+				0EC8AC051CBD40E2009AC336 /* ZZSubjectRankAuthor.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -661,6 +666,7 @@
 				0EEAEBEA1CBBEE650008F86A /* ZZSubjectAuthor.m in Sources */,
 				E6037C321CA9007500B3BED0 /* ZZTabBar.m in Sources */,
 				0E324B6B1CA8320700A4B39B /* main.m in Sources */,
+				0EC8AC061CBD40E2009AC336 /* ZZSubjectRankAuthor.m in Sources */,
 				E6D26D691CBB9D9900C4A74F /* UINavigationBar+Awesome.m in Sources */,
 				0E1E20BB1CBA5C5E0032723A /* ZZNoHLButton.m in Sources */,
 				0EFBC3901CB69DB200C4E8DA /* ZZHomeVC.m in Sources */,
