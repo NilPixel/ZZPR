@@ -19,6 +19,8 @@
 		0E324B8F1CA8320700A4B39B /* HalfSugarismUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E324B8E1CA8320700A4B39B /* HalfSugarismUITests.m */; };
 		0EC5336B1CB8A2E90053586F /* UIImageView+ZZExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC5336A1CB8A2E90053586F /* UIImageView+ZZExtension.m */; };
 		0EC8AC061CBD40E2009AC336 /* ZZSubjectRankAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC8AC051CBD40E2009AC336 /* ZZSubjectRankAuthor.m */; };
+		0EE4EABA1CBE8FB8003FD6C1 /* ZZBaseRequestParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE4EAB91CBE8FB8003FD6C1 /* ZZBaseRequestParams.m */; };
+		0EE4EABD1CBE925C003FD6C1 /* ZZSubjectListPostParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE4EABC1CBE925C003FD6C1 /* ZZSubjectListPostParams.m */; };
 		0EEAEBDB1CBBE9BC0008F86A /* Mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 0EEAEBD61CBBE9BC0008F86A /* Mask.png */; };
 		0EEAEBDC1CBBE9BC0008F86A /* PullToRefreshCoreTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EEAEBD81CBBE9BC0008F86A /* PullToRefreshCoreTextView.m */; };
 		0EEAEBDD1CBBE9BC0008F86A /* UIScrollView+PullToRefreshCoreText.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EEAEBDA1CBBE9BC0008F86A /* UIScrollView+PullToRefreshCoreText.m */; };
@@ -94,6 +96,10 @@
 		0EC5336A1CB8A2E90053586F /* UIImageView+ZZExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+ZZExtension.m"; sourceTree = "<group>"; };
 		0EC8AC041CBD40E2009AC336 /* ZZSubjectRankAuthor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZSubjectRankAuthor.h; sourceTree = "<group>"; };
 		0EC8AC051CBD40E2009AC336 /* ZZSubjectRankAuthor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZSubjectRankAuthor.m; sourceTree = "<group>"; };
+		0EE4EAB81CBE8FB8003FD6C1 /* ZZBaseRequestParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZBaseRequestParams.h; sourceTree = "<group>"; };
+		0EE4EAB91CBE8FB8003FD6C1 /* ZZBaseRequestParams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZBaseRequestParams.m; sourceTree = "<group>"; };
+		0EE4EABB1CBE925C003FD6C1 /* ZZSubjectListPostParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZSubjectListPostParams.h; sourceTree = "<group>"; };
+		0EE4EABC1CBE925C003FD6C1 /* ZZSubjectListPostParams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZSubjectListPostParams.m; sourceTree = "<group>"; };
 		0EEAEBD61CBBE9BC0008F86A /* Mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mask.png; sourceTree = "<group>"; };
 		0EEAEBD71CBBE9BC0008F86A /* PullToRefreshCoreTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PullToRefreshCoreTextView.h; sourceTree = "<group>"; };
 		0EEAEBD81CBBE9BC0008F86A /* PullToRefreshCoreTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PullToRefreshCoreTextView.m; sourceTree = "<group>"; };
@@ -356,6 +362,10 @@
 				0EEAEBE91CBBEE650008F86A /* ZZSubjectAuthor.m */,
 				0EC8AC041CBD40E2009AC336 /* ZZSubjectRankAuthor.h */,
 				0EC8AC051CBD40E2009AC336 /* ZZSubjectRankAuthor.m */,
+				0EE4EAB81CBE8FB8003FD6C1 /* ZZBaseRequestParams.h */,
+				0EE4EAB91CBE8FB8003FD6C1 /* ZZBaseRequestParams.m */,
+				0EE4EABB1CBE925C003FD6C1 /* ZZSubjectListPostParams.h */,
+				0EE4EABC1CBE925C003FD6C1 /* ZZSubjectListPostParams.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -669,6 +679,7 @@
 				0EC8AC061CBD40E2009AC336 /* ZZSubjectRankAuthor.m in Sources */,
 				E6D26D691CBB9D9900C4A74F /* UINavigationBar+Awesome.m in Sources */,
 				0E1E20BB1CBA5C5E0032723A /* ZZNoHLButton.m in Sources */,
+				0EE4EABD1CBE925C003FD6C1 /* ZZSubjectListPostParams.m in Sources */,
 				0EFBC3901CB69DB200C4E8DA /* ZZHomeVC.m in Sources */,
 				0E1E20C11CBA84580032723A /* ZZHomeTopic.m in Sources */,
 				E6EEF29F1CAA659700855540 /* ZZPhotoGroupViewController.m in Sources */,
@@ -678,6 +689,7 @@
 				0EEAEBE71CBBEE500008F86A /* ZZSubjectDynamic.m in Sources */,
 				0EFBC39A1CB6A8DB00C4E8DA /* ZZHomeBanner.m in Sources */,
 				0EC5336B1CB8A2E90053586F /* UIImageView+ZZExtension.m in Sources */,
+				0EE4EABA1CBE8FB8003FD6C1 /* ZZBaseRequestParams.m in Sources */,
 				E6D26D651CBB8F0F00C4A74F /* ZZPageLoadFooterView.m in Sources */,
 				0EF66DF21CB7F6B000C67A38 /* ZZEntryList.m in Sources */,
 				0EFBC3961CB6A01000C4E8DA /* ZZHomePageHeaderView.m in Sources */,
