@@ -14,4 +14,8 @@
 
 #define ZZGobalRedColor [UIColor colorWithHexString:@"#ec5252"]
 
+#define kScreen_Height   ([UIScreen mainScreen].bounds.size.height)
+#define kScreen_Width    ([UIScreen mainScreen].bounds.size.width)
+
+
 #endif /* UIConstant_h */
