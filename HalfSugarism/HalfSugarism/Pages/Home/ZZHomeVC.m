@@ -9,6 +9,7 @@
 #import "ZZHomeVC.h"
 #import "ZZHomePageHeaderView.h"
 #import "ZZHomePageData.h"
+#import "ZZHomePageManager.h"
 #import "ZZLoadingView.h"
 #import "ZZPageLoadFooterView.h"
 #import "UINavigationBar+Awesome.h"
@@ -93,7 +94,17 @@
     }];
     
 }
-
+- (void)loadDataFromStart:(BOOL)boolean
+{
+    if (boolean) {
+        self.page = 0;
+    }
+    [ZZHomePageManager getHomePageDataWithPage:self.page successHandler:^(ZZHomePageData *pageData) {
+        <#code#>
+    } failureHandler:^(NSError *error) {
+        <#code#>
+    }]
+}
 #pragma mark - event responseder
 
 - (void)searchBtnClick
