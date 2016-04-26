@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-@class FMDatabase,FMDatabaseQueue;
+#import "FMDatabase.h"
+#import "FMDatabaseQueue.h"
 @interface ZZDBHelper : NSObject
 
 + (FMDatabaseQueue *)getDataBaseQueue;
