@@ -16,6 +16,7 @@
 
 #define kScreen_Height   ([UIScreen mainScreen].bounds.size.height)
 #define kScreen_Width    ([UIScreen mainScreen].bounds.size.width)
-
+// iOS8的字体
+#define BTFont(_size_) [UIFont fontWithName:@"FZLanTingHei-L-GBK" size:_size_]
 
 #endif /* UIConstant_h */

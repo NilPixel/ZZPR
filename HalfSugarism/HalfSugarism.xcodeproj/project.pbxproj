@@ -49,6 +49,16 @@
 		E6037C321CA9007500B3BED0 /* ZZTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E6037C311CA9007500B3BED0 /* ZZTabBar.m */; };
 		E6037C351CA902D300B3BED0 /* ZZPlusButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E6037C341CA902D300B3BED0 /* ZZPlusButton.m */; };
 		E6037C381CA90BA300B3BED0 /* ZZPlusButtonSubClass.m in Sources */ = {isa = PBXBuildFile; fileRef = E6037C371CA90BA300B3BED0 /* ZZPlusButtonSubClass.m */; };
+		E69058D71CE5AF4600F4924E /* ZZHomePushTransitionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E69058D61CE5AF4600F4924E /* ZZHomePushTransitionVC.m */; };
+		E69058DB1CE5B06B00F4924E /* RMPZoomTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = E69058DA1CE5B06B00F4924E /* RMPZoomTransitionAnimator.m */; };
+		E69058DE1CE5B09D00F4924E /* ZZNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E69058DD1CE5B09D00F4924E /* ZZNavigationController.m */; };
+		E69058E31CE5B88C00F4924E /* ZZHomeTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E69058E21CE5B88C00F4924E /* ZZHomeTopicCell.m */; };
+		E69058E71CE5C96000F4924E /* ZZCommunityVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E69058E61CE5C96000F4924E /* ZZCommunityVC.m */; };
+		E69058EB1CE5C9A500F4924E /* ZZMessageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E69058EA1CE5C9A500F4924E /* ZZMessageVC.m */; };
+		E69058EF1CE5C9D500F4924E /* ZZProfileVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E69058EE1CE5C9D500F4924E /* ZZProfileVC.m */; };
+		E69058F71CE5CD2300F4924E /* BTPlusButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E69058F21CE5CD2300F4924E /* BTPlusButton.m */; };
+		E69058F81CE5CD2300F4924E /* BTTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E69058F41CE5CD2300F4924E /* BTTabBar.m */; };
+		E69058F91CE5CD2300F4924E /* BTTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = E69058F61CE5CD2300F4924E /* BTTabBarController.m */; };
 		E6D26D621CBB4C6F00C4A74F /* ZZLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D26D611CBB4C6F00C4A74F /* ZZLoadingView.m */; };
 		E6D26D651CBB8F0F00C4A74F /* ZZPageLoadFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D26D641CBB8F0F00C4A74F /* ZZPageLoadFooterView.m */; };
 		E6D26D691CBB9D9900C4A74F /* UINavigationBar+Awesome.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D26D681CBB9D9900C4A74F /* UINavigationBar+Awesome.m */; };
@@ -164,6 +174,26 @@
 		E6037C341CA902D300B3BED0 /* ZZPlusButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZPlusButton.m; sourceTree = "<group>"; };
 		E6037C361CA90BA300B3BED0 /* ZZPlusButtonSubClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZPlusButtonSubClass.h; sourceTree = "<group>"; };
 		E6037C371CA90BA300B3BED0 /* ZZPlusButtonSubClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZPlusButtonSubClass.m; sourceTree = "<group>"; };
+		E69058D51CE5AF4600F4924E /* ZZHomePushTransitionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZHomePushTransitionVC.h; sourceTree = "<group>"; };
+		E69058D61CE5AF4600F4924E /* ZZHomePushTransitionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZHomePushTransitionVC.m; sourceTree = "<group>"; };
+		E69058D91CE5B06B00F4924E /* RMPZoomTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMPZoomTransitionAnimator.h; sourceTree = "<group>"; };
+		E69058DA1CE5B06B00F4924E /* RMPZoomTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMPZoomTransitionAnimator.m; sourceTree = "<group>"; };
+		E69058DC1CE5B09D00F4924E /* ZZNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZNavigationController.h; sourceTree = "<group>"; };
+		E69058DD1CE5B09D00F4924E /* ZZNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZNavigationController.m; sourceTree = "<group>"; };
+		E69058E11CE5B88C00F4924E /* ZZHomeTopicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZHomeTopicCell.h; sourceTree = "<group>"; };
+		E69058E21CE5B88C00F4924E /* ZZHomeTopicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZHomeTopicCell.m; sourceTree = "<group>"; };
+		E69058E51CE5C96000F4924E /* ZZCommunityVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZCommunityVC.h; sourceTree = "<group>"; };
+		E69058E61CE5C96000F4924E /* ZZCommunityVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZCommunityVC.m; sourceTree = "<group>"; };
+		E69058E91CE5C9A500F4924E /* ZZMessageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZMessageVC.h; sourceTree = "<group>"; };
+		E69058EA1CE5C9A500F4924E /* ZZMessageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZMessageVC.m; sourceTree = "<group>"; };
+		E69058ED1CE5C9D500F4924E /* ZZProfileVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZProfileVC.h; sourceTree = "<group>"; };
+		E69058EE1CE5C9D500F4924E /* ZZProfileVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZProfileVC.m; sourceTree = "<group>"; };
+		E69058F11CE5CD2300F4924E /* BTPlusButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTPlusButton.h; sourceTree = "<group>"; };
+		E69058F21CE5CD2300F4924E /* BTPlusButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTPlusButton.m; sourceTree = "<group>"; };
+		E69058F31CE5CD2300F4924E /* BTTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTTabBar.h; sourceTree = "<group>"; };
+		E69058F41CE5CD2300F4924E /* BTTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTTabBar.m; sourceTree = "<group>"; };
+		E69058F51CE5CD2300F4924E /* BTTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTTabBarController.h; sourceTree = "<group>"; };
+		E69058F61CE5CD2300F4924E /* BTTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTTabBarController.m; sourceTree = "<group>"; };
 		E6D26D601CBB4C6F00C4A74F /* ZZLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZLoadingView.h; sourceTree = "<group>"; };
 		E6D26D611CBB4C6F00C4A74F /* ZZLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZLoadingView.m; sourceTree = "<group>"; };
 		E6D26D631CBB8F0F00C4A74F /* ZZPageLoadFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZPageLoadFooterView.h; sourceTree = "<group>"; };
@@ -333,6 +363,10 @@
 		0EFBC38C1CB69D7300C4E8DA /* Pages */ = {
 			isa = PBXGroup;
 			children = (
+				E69058EC1CE5C9C100F4924E /* Mine */,
+				E69058E81CE5C99600F4924E /* Message */,
+				E69058E41CE5C58800F4924E /* Community */,
+				E69058DF1CE5B83200F4924E /* Topic_List */,
 				0EFBC38D1CB69D9500C4E8DA /* Home */,
 			);
 			path = Pages;
@@ -344,6 +378,8 @@
 				0EFBC3911CB69F4A00C4E8DA /* Widget */,
 				0EFBC38E1CB69DB200C4E8DA /* ZZHomeVC.h */,
 				0EFBC38F1CB69DB200C4E8DA /* ZZHomeVC.m */,
+				E69058D51CE5AF4600F4924E /* ZZHomePushTransitionVC.h */,
+				E69058D61CE5AF4600F4924E /* ZZHomePushTransitionVC.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -442,6 +478,7 @@
 		E6037C261CA8CAF500B3BED0 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				E69058D81CE5B04000F4924E /* NavigationController */,
 				E6D26D5F1CBB4C3D00C4A74F /* Loading */,
 				E6037C271CA8CB1C00B3BED0 /* TabbarController */,
 			);
@@ -462,6 +499,7 @@
 		E6037C2B1CA8CED800B3BED0 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				E69058F01CE5CD0200F4924E /* CLYTabBarController */,
 				0EDAC2641CC67D850089FEA0 /* Store */,
 				0EEAEBD51CBBE9560008F86A /* PullToRefreshCoreText */,
 				E6D26D661CBB9D7800C4A74F /* NavigationBar */,
@@ -482,6 +520,74 @@
 				E6037C341CA902D300B3BED0 /* ZZPlusButton.m */,
 			);
 			path = ZZtabBarController;
+			sourceTree = "<group>";
+		};
+		E69058D81CE5B04000F4924E /* NavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				E69058D91CE5B06B00F4924E /* RMPZoomTransitionAnimator.h */,
+				E69058DA1CE5B06B00F4924E /* RMPZoomTransitionAnimator.m */,
+				E69058DC1CE5B09D00F4924E /* ZZNavigationController.h */,
+				E69058DD1CE5B09D00F4924E /* ZZNavigationController.m */,
+			);
+			path = NavigationController;
+			sourceTree = "<group>";
+		};
+		E69058DF1CE5B83200F4924E /* Topic_List */ = {
+			isa = PBXGroup;
+			children = (
+				E69058E01CE5B85C00F4924E /* Cell */,
+			);
+			path = Topic_List;
+			sourceTree = "<group>";
+		};
+		E69058E01CE5B85C00F4924E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E69058E11CE5B88C00F4924E /* ZZHomeTopicCell.h */,
+				E69058E21CE5B88C00F4924E /* ZZHomeTopicCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		E69058E41CE5C58800F4924E /* Community */ = {
+			isa = PBXGroup;
+			children = (
+				E69058E51CE5C96000F4924E /* ZZCommunityVC.h */,
+				E69058E61CE5C96000F4924E /* ZZCommunityVC.m */,
+			);
+			path = Community;
+			sourceTree = "<group>";
+		};
+		E69058E81CE5C99600F4924E /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				E69058E91CE5C9A500F4924E /* ZZMessageVC.h */,
+				E69058EA1CE5C9A500F4924E /* ZZMessageVC.m */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		E69058EC1CE5C9C100F4924E /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				E69058ED1CE5C9D500F4924E /* ZZProfileVC.h */,
+				E69058EE1CE5C9D500F4924E /* ZZProfileVC.m */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		E69058F01CE5CD0200F4924E /* CLYTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				E69058F11CE5CD2300F4924E /* BTPlusButton.h */,
+				E69058F21CE5CD2300F4924E /* BTPlusButton.m */,
+				E69058F31CE5CD2300F4924E /* BTTabBar.h */,
+				E69058F41CE5CD2300F4924E /* BTTabBar.m */,
+				E69058F51CE5CD2300F4924E /* BTTabBarController.h */,
+				E69058F61CE5CD2300F4924E /* BTTabBarController.m */,
+			);
+			path = CLYTabBarController;
 			sourceTree = "<group>";
 		};
 		E6D26D5F1CBB4C3D00C4A74F /* Loading */ = {
@@ -715,14 +821,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6EEF2991CAA54CE00855540 /* ZZPhotoGroupView.m in Sources */,
+				E69058F71CE5CD2300F4924E /* BTPlusButton.m in Sources */,
 				E6EEF2A51CAA6ECB00855540 /* ZZPhotoListViewCell.m in Sources */,
 				0E3A65481CC1CF1B00D7F836 /* ZZTag.m in Sources */,
 				0EEAEBDD1CBBE9BC0008F86A /* UIScrollView+PullToRefreshCoreText.m in Sources */,
 				0E1E20C71CBA88FE0032723A /* ZZFirstPageElement.m in Sources */,
 				E6EEF2961CAA1F6800855540 /* ZZPhotoGroupCell.m in Sources */,
+				E69058E31CE5B88C00F4924E /* ZZHomeTopicCell.m in Sources */,
 				E6EEF2A81CAA75B400855540 /* ZZTapAssetView.m in Sources */,
 				E6D26D621CBB4C6F00C4A74F /* ZZLoadingView.m in Sources */,
+				E69058DB1CE5B06B00F4924E /* RMPZoomTransitionAnimator.m in Sources */,
 				0E3A654E1CC1D65800D7F836 /* ZZTopicNewInfo.m in Sources */,
+				E69058EB1CE5C9A500F4924E /* ZZMessageVC.m in Sources */,
 				0EF66DEF1CB7F65900C67A38 /* ZZEntryListCell.m in Sources */,
 				E6037C2A1CA8CB7900B3BED0 /* ZZTabbarControllerConfig.m in Sources */,
 				E6EEF2A21CAA6E9B00855540 /* ZZPhotoListView.m in Sources */,
@@ -736,8 +846,10 @@
 				E6037C321CA9007500B3BED0 /* ZZTabBar.m in Sources */,
 				0E3A653F1CC1CA8F00D7F836 /* ZZListPost.m in Sources */,
 				0E324B6B1CA8320700A4B39B /* main.m in Sources */,
+				E69058E71CE5C96000F4924E /* ZZCommunityVC.m in Sources */,
 				0EC8AC061CBD40E2009AC336 /* ZZSubjectRankAuthor.m in Sources */,
 				E6D26D691CBB9D9900C4A74F /* UINavigationBar+Awesome.m in Sources */,
+				E69058F91CE5CD2300F4924E /* BTTabBarController.m in Sources */,
 				0E1E20BB1CBA5C5E0032723A /* ZZNoHLButton.m in Sources */,
 				0EE4EABD1CBE925C003FD6C1 /* ZZSubjectListPostParams.m in Sources */,
 				0EFBC3901CB69DB200C4E8DA /* ZZHomeVC.m in Sources */,
@@ -750,11 +862,15 @@
 				0EFBC39A1CB6A8DB00C4E8DA /* ZZHomeBanner.m in Sources */,
 				0EC5336B1CB8A2E90053586F /* UIImageView+ZZExtension.m in Sources */,
 				0EE4EABA1CBE8FB8003FD6C1 /* ZZBaseRequestParams.m in Sources */,
+				E69058F81CE5CD2300F4924E /* BTTabBar.m in Sources */,
 				E6D26D651CBB8F0F00C4A74F /* ZZPageLoadFooterView.m in Sources */,
 				0EF66DF21CB7F6B000C67A38 /* ZZEntryList.m in Sources */,
+				E69058EF1CE5C9D500F4924E /* ZZProfileVC.m in Sources */,
+				E69058D71CE5AF4600F4924E /* ZZHomePushTransitionVC.m in Sources */,
 				0E6714F41CC32D210042A820 /* ZZSubscribeTag.m in Sources */,
 				0E3A654B1CC1CFAE00D7F836 /* ZZListPostPics.m in Sources */,
 				0EFBC3961CB6A01000C4E8DA /* ZZHomePageHeaderView.m in Sources */,
+				E69058DE1CE5B09D00F4924E /* ZZNavigationController.m in Sources */,
 				E6037C351CA902D300B3BED0 /* ZZPlusButton.m in Sources */,
 				0E1E20BE1CBA76030032723A /* ZZHomePageData.m in Sources */,
 				0EEAEBDC1CBBE9BC0008F86A /* PullToRefreshCoreTextView.m in Sources */,
