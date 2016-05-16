@@ -16,7 +16,7 @@ extern NSUInteger CYLTabbarItemsCount;
 
 #import <UIKit/UIKit.h>
 
-@interface BTTabBarController : UITabBarController
+@interface ZZTabBarController : UITabBarController
 
 /**
  * An array of the root view controllers displayed by the tab bar interface.
@@ -34,6 +34,6 @@ extern NSUInteger CYLTabbarItemsCount;
 /**
  * The nearest ancestor in the view controller hierarchy that is a tab bar controller. (read-only)
  */
-@property(nonatomic, readonly) BTTabBarController *cyl_tabBarController;
+@property(nonatomic, readonly) ZZTabBarController *cyl_tabBarController;
 
 @end

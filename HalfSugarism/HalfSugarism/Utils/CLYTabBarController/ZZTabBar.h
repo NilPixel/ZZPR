@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BTTabBarController.h"
-#import "BTPlusButton.h"
+#import "ZZTabBarController.h"
+#import "ZZPlusButton.h"
 
-@interface BTTabBar : UITabBar
+@interface ZZTabBar : UITabBar
 @end

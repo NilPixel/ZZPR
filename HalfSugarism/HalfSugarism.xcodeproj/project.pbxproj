@@ -24,6 +24,11 @@
 		0E3A654B1CC1CFAE00D7F836 /* ZZListPostPics.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E3A654A1CC1CFAE00D7F836 /* ZZListPostPics.m */; };
 		0E3A654E1CC1D65800D7F836 /* ZZTopicNewInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E3A654D1CC1D65800D7F836 /* ZZTopicNewInfo.m */; };
 		0E6714F41CC32D210042A820 /* ZZSubscribeTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E6714F31CC32D210042A820 /* ZZSubscribeTag.m */; };
+		0E75E35D1CE703E000B5144E /* ZZPlusButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E75E35C1CE703E000B5144E /* ZZPlusButton.m */; };
+		0E75E3601CE703FD00B5144E /* ZZTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E75E35F1CE703FD00B5144E /* ZZTabBar.m */; };
+		0E75E3631CE7042E00B5144E /* ZZTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E75E3621CE7042E00B5144E /* ZZTabBarController.m */; };
+		0E75E3681CE7063B00B5144E /* ZZLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E75E3661CE7063B00B5144E /* ZZLoginVC.m */; };
+		0E75E3691CE7063B00B5144E /* ZZLoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E75E3671CE7063B00B5144E /* ZZLoginVC.xib */; };
 		0EA99F4B1CCC6C0B006CD370 /* ZZDBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EA99F4A1CCC6C0B006CD370 /* ZZDBHelper.m */; };
 		0EC5336B1CB8A2E90053586F /* UIImageView+ZZExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC5336A1CB8A2E90053586F /* UIImageView+ZZExtension.m */; };
 		0EC8AC061CBD40E2009AC336 /* ZZSubjectRankAuthor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC8AC051CBD40E2009AC336 /* ZZSubjectRankAuthor.m */; };
@@ -56,9 +61,6 @@
 		E69058E71CE5C96000F4924E /* ZZCommunityVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E69058E61CE5C96000F4924E /* ZZCommunityVC.m */; };
 		E69058EB1CE5C9A500F4924E /* ZZMessageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E69058EA1CE5C9A500F4924E /* ZZMessageVC.m */; };
 		E69058EF1CE5C9D500F4924E /* ZZProfileVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E69058EE1CE5C9D500F4924E /* ZZProfileVC.m */; };
-		E69058F71CE5CD2300F4924E /* BTPlusButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E69058F21CE5CD2300F4924E /* BTPlusButton.m */; };
-		E69058F81CE5CD2300F4924E /* BTTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E69058F41CE5CD2300F4924E /* BTTabBar.m */; };
-		E69058F91CE5CD2300F4924E /* BTTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = E69058F61CE5CD2300F4924E /* BTTabBarController.m */; };
 		E6D26D621CBB4C6F00C4A74F /* ZZLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D26D611CBB4C6F00C4A74F /* ZZLoadingView.m */; };
 		E6D26D651CBB8F0F00C4A74F /* ZZPageLoadFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D26D641CBB8F0F00C4A74F /* ZZPageLoadFooterView.m */; };
 		E6D26D691CBB9D9900C4A74F /* UINavigationBar+Awesome.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D26D681CBB9D9900C4A74F /* UINavigationBar+Awesome.m */; };
@@ -125,6 +127,15 @@
 		0E5C91431CAAC86B00E41A34 /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
 		0E6714F21CC32D210042A820 /* ZZSubscribeTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZSubscribeTag.h; sourceTree = "<group>"; };
 		0E6714F31CC32D210042A820 /* ZZSubscribeTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZSubscribeTag.m; sourceTree = "<group>"; };
+		0E75E35B1CE703E000B5144E /* ZZPlusButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZPlusButton.h; sourceTree = "<group>"; };
+		0E75E35C1CE703E000B5144E /* ZZPlusButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZPlusButton.m; sourceTree = "<group>"; };
+		0E75E35E1CE703FD00B5144E /* ZZTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZTabBar.h; sourceTree = "<group>"; };
+		0E75E35F1CE703FD00B5144E /* ZZTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZTabBar.m; sourceTree = "<group>"; };
+		0E75E3611CE7042E00B5144E /* ZZTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZTabBarController.h; sourceTree = "<group>"; };
+		0E75E3621CE7042E00B5144E /* ZZTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZTabBarController.m; sourceTree = "<group>"; };
+		0E75E3651CE7063B00B5144E /* ZZLoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZLoginVC.h; sourceTree = "<group>"; };
+		0E75E3661CE7063B00B5144E /* ZZLoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZLoginVC.m; sourceTree = "<group>"; };
+		0E75E3671CE7063B00B5144E /* ZZLoginVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZZLoginVC.xib; sourceTree = "<group>"; };
 		0EA99F491CCC6C0B006CD370 /* ZZDBHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZDBHelper.h; sourceTree = "<group>"; };
 		0EA99F4A1CCC6C0B006CD370 /* ZZDBHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZDBHelper.m; sourceTree = "<group>"; };
 		0EC533691CB8A2E90053586F /* UIImageView+ZZExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+ZZExtension.h"; sourceTree = "<group>"; };
@@ -188,12 +199,6 @@
 		E69058EA1CE5C9A500F4924E /* ZZMessageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZMessageVC.m; sourceTree = "<group>"; };
 		E69058ED1CE5C9D500F4924E /* ZZProfileVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZProfileVC.h; sourceTree = "<group>"; };
 		E69058EE1CE5C9D500F4924E /* ZZProfileVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZProfileVC.m; sourceTree = "<group>"; };
-		E69058F11CE5CD2300F4924E /* BTPlusButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTPlusButton.h; sourceTree = "<group>"; };
-		E69058F21CE5CD2300F4924E /* BTPlusButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTPlusButton.m; sourceTree = "<group>"; };
-		E69058F31CE5CD2300F4924E /* BTTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTTabBar.h; sourceTree = "<group>"; };
-		E69058F41CE5CD2300F4924E /* BTTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTTabBar.m; sourceTree = "<group>"; };
-		E69058F51CE5CD2300F4924E /* BTTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTTabBarController.h; sourceTree = "<group>"; };
-		E69058F61CE5CD2300F4924E /* BTTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTTabBarController.m; sourceTree = "<group>"; };
 		E6D26D601CBB4C6F00C4A74F /* ZZLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZLoadingView.h; sourceTree = "<group>"; };
 		E6D26D611CBB4C6F00C4A74F /* ZZLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZLoadingView.m; sourceTree = "<group>"; };
 		E6D26D631CBB8F0F00C4A74F /* ZZPageLoadFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZPageLoadFooterView.h; sourceTree = "<group>"; };
@@ -308,6 +313,16 @@
 				0E324B901CA8320700A4B39B /* Info.plist */,
 			);
 			path = HalfSugarismUITests;
+			sourceTree = "<group>";
+		};
+		0E75E3641CE7060B00B5144E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				0E75E3651CE7063B00B5144E /* ZZLoginVC.h */,
+				0E75E3661CE7063B00B5144E /* ZZLoginVC.m */,
+				0E75E3671CE7063B00B5144E /* ZZLoginVC.xib */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		0EC533681CB8A1E10053586F /* Extension */ = {
@@ -478,6 +493,7 @@
 		E6037C261CA8CAF500B3BED0 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				0E75E3641CE7060B00B5144E /* Login */,
 				E69058D81CE5B04000F4924E /* NavigationController */,
 				E6D26D5F1CBB4C3D00C4A74F /* Loading */,
 				E6037C271CA8CB1C00B3BED0 /* TabbarController */,
@@ -580,12 +596,12 @@
 		E69058F01CE5CD0200F4924E /* CLYTabBarController */ = {
 			isa = PBXGroup;
 			children = (
-				E69058F11CE5CD2300F4924E /* BTPlusButton.h */,
-				E69058F21CE5CD2300F4924E /* BTPlusButton.m */,
-				E69058F31CE5CD2300F4924E /* BTTabBar.h */,
-				E69058F41CE5CD2300F4924E /* BTTabBar.m */,
-				E69058F51CE5CD2300F4924E /* BTTabBarController.h */,
-				E69058F61CE5CD2300F4924E /* BTTabBarController.m */,
+				0E75E35B1CE703E000B5144E /* ZZPlusButton.h */,
+				0E75E35C1CE703E000B5144E /* ZZPlusButton.m */,
+				0E75E35E1CE703FD00B5144E /* ZZTabBar.h */,
+				0E75E35F1CE703FD00B5144E /* ZZTabBar.m */,
+				0E75E3611CE7042E00B5144E /* ZZTabBarController.h */,
+				0E75E3621CE7042E00B5144E /* ZZTabBarController.m */,
 			);
 			path = CLYTabBarController;
 			sourceTree = "<group>";
@@ -745,6 +761,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E75E3691CE7063B00B5144E /* ZZLoginVC.xib in Resources */,
 				0EEAEBDB1CBBE9BC0008F86A /* Mask.png in Resources */,
 				0E324B791CA8320700A4B39B /* LaunchScreen.storyboard in Resources */,
 				0E324B761CA8320700A4B39B /* Assets.xcassets in Resources */,
@@ -821,10 +838,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6EEF2991CAA54CE00855540 /* ZZPhotoGroupView.m in Sources */,
-				E69058F71CE5CD2300F4924E /* BTPlusButton.m in Sources */,
 				E6EEF2A51CAA6ECB00855540 /* ZZPhotoListViewCell.m in Sources */,
 				0E3A65481CC1CF1B00D7F836 /* ZZTag.m in Sources */,
 				0EEAEBDD1CBBE9BC0008F86A /* UIScrollView+PullToRefreshCoreText.m in Sources */,
+				0E75E35D1CE703E000B5144E /* ZZPlusButton.m in Sources */,
 				0E1E20C71CBA88FE0032723A /* ZZFirstPageElement.m in Sources */,
 				E6EEF2961CAA1F6800855540 /* ZZPhotoGroupCell.m in Sources */,
 				E69058E31CE5B88C00F4924E /* ZZHomeTopicCell.m in Sources */,
@@ -840,17 +857,19 @@
 				0E3A65451CC1CCC100D7F836 /* ZZProduct.m in Sources */,
 				0EDAC2671CC67DA10089FEA0 /* ZZDataBaseManager.m in Sources */,
 				E6037C381CA90BA300B3BED0 /* ZZPlusButtonSubClass.m in Sources */,
+				0E75E3631CE7042E00B5144E /* ZZTabBarController.m in Sources */,
 				0EA99F4B1CCC6C0B006CD370 /* ZZDBHelper.m in Sources */,
 				0EEAEBEA1CBBEE650008F86A /* ZZSubjectAuthor.m in Sources */,
 				0E3A65421CC1CBA200D7F836 /* ZZListPostDynamic.m in Sources */,
+				0E75E3681CE7063B00B5144E /* ZZLoginVC.m in Sources */,
 				E6037C321CA9007500B3BED0 /* ZZTabBar.m in Sources */,
 				0E3A653F1CC1CA8F00D7F836 /* ZZListPost.m in Sources */,
 				0E324B6B1CA8320700A4B39B /* main.m in Sources */,
 				E69058E71CE5C96000F4924E /* ZZCommunityVC.m in Sources */,
 				0EC8AC061CBD40E2009AC336 /* ZZSubjectRankAuthor.m in Sources */,
 				E6D26D691CBB9D9900C4A74F /* UINavigationBar+Awesome.m in Sources */,
-				E69058F91CE5CD2300F4924E /* BTTabBarController.m in Sources */,
 				0E1E20BB1CBA5C5E0032723A /* ZZNoHLButton.m in Sources */,
+				0E75E3601CE703FD00B5144E /* ZZTabBar.m in Sources */,
 				0EE4EABD1CBE925C003FD6C1 /* ZZSubjectListPostParams.m in Sources */,
 				0EFBC3901CB69DB200C4E8DA /* ZZHomeVC.m in Sources */,
 				0E1E20C11CBA84580032723A /* ZZHomeTopic.m in Sources */,
@@ -862,7 +881,6 @@
 				0EFBC39A1CB6A8DB00C4E8DA /* ZZHomeBanner.m in Sources */,
 				0EC5336B1CB8A2E90053586F /* UIImageView+ZZExtension.m in Sources */,
 				0EE4EABA1CBE8FB8003FD6C1 /* ZZBaseRequestParams.m in Sources */,
-				E69058F81CE5CD2300F4924E /* BTTabBar.m in Sources */,
 				E6D26D651CBB8F0F00C4A74F /* ZZPageLoadFooterView.m in Sources */,
 				0EF66DF21CB7F6B000C67A38 /* ZZEntryList.m in Sources */,
 				E69058EF1CE5C9D500F4924E /* ZZProfileVC.m in Sources */,

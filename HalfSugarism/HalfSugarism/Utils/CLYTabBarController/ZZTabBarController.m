@@ -6,24 +6,24 @@
 //  Copyright © 2015 https://github.com/ChenYilong . All rights reserved.
 //
 
-#import "BTTabBarController.h"
-#import "BTMessageVC.h"
-#import "BTTabBar.h"
-#import "BTNavigationController.h"
+#import "ZZTabBarController.h"
+#import "ZZMessageVC.h"
+#import "ZZTabBar.h"
+#import "ZZNavigationController.h"
 #import <objc/runtime.h>
-#import "BTLoginVC.h"
+#import "ZZLoginVC.h"
 NSUInteger CYLTabbarItemsCount = 0;
 
 @interface UIViewController (CYLTabBarControllerItemInternal)
 
-- (void)cyl_setTabBarController:(BTTabBarController *)tabBarController;
+- (void)cyl_setTabBarController:(ZZTabBarController *)tabBarController;
 
 @end
 
-@interface BTTabBarController () <UITabBarDelegate,UITabBarControllerDelegate>
+@interface ZZTabBarController () <UITabBarDelegate,UITabBarControllerDelegate>
 
 @end
-@implementation BTTabBarController
+@implementation ZZTabBarController
 @synthesize viewControllers = _viewControllers;
 
 #pragma mark -
@@ -43,7 +43,7 @@ NSUInteger CYLTabbarItemsCount = 0;
  *  利用 KVC 把 系统的 tabBar 类型改为自定义类型。
  */
 - (void)setUpTabBar {
-    [self setValue:[[BTTabBar alloc] init] forKey:@"tabBar"];
+    [self setValue:[[ZZTabBar alloc] init] forKey:@"tabBar"];
 }
 
 - (void)setViewControllers:(NSArray *)viewControllers {
@@ -117,7 +117,7 @@ NSUInteger CYLTabbarItemsCount = 0;
 //        [self presentViewController:loginVC animated:YES completion:nil];
 //        return NO;
 //    }
-//    
+//
 //    return YES;
 //}
 
@@ -127,7 +127,7 @@ NSUInteger CYLTabbarItemsCount = 0;
 
 @implementation UIViewController (CYLTabBarControllerItemInternal)
 
-- (void)cyl_setTabBarController:(BTTabBarController *)tabBarController {
+- (void)cyl_setTabBarController:(ZZTabBarController *)tabBarController {
     objc_setAssociatedObject(self, @selector(cyl_tabBarController), tabBarController, OBJC_ASSOCIATION_ASSIGN);
 }
 
@@ -135,8 +135,8 @@ NSUInteger CYLTabbarItemsCount = 0;
 
 @implementation UIViewController (CYLTabBarController)
 
-- (BTTabBarController *)cyl_tabBarController {
-    BTTabBarController *tabBarController = objc_getAssociatedObject(self, @selector(cyl_tabBarController));
+- (ZZTabBarController *)cyl_tabBarController {
+    ZZTabBarController *tabBarController = objc_getAssociatedObject(self, @selector(cyl_tabBarController));
     
     if (!tabBarController && self.parentViewController) {
         tabBarController = [self.parentViewController cyl_tabBarController];

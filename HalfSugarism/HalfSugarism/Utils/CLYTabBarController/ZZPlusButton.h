@@ -31,11 +31,11 @@
 
 @end
 
-@class BTTabBar;
+@class ZZTabBar;
 
 extern UIButton<CYLPlusButtonSubclassing> *CYLExternPushlishButton;
 
-@interface BTPlusButton : UIButton
+@interface ZZPlusButton : UIButton
 
 + (void)registerSubclass;
 

@@ -6,16 +6,16 @@
 //  Copyright © 2015 https://github.com/ChenYilong . All rights reserved.
 //
 
-#import "BTTabBar.h"
+#import "ZZTabBar.h"
 
-@interface BTTabBar ()
+@interface ZZTabBar ()
 
 /** 发布按钮 */
 @property (nonatomic, strong) UIButton<CYLPlusButtonSubclassing> *plusButton;
 
 @end
 
-@implementation BTTabBar
+@implementation ZZTabBar
 
 - (instancetype)initWithFrame:(CGRect)frame
 {

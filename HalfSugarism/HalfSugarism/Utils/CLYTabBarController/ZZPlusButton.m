@@ -6,15 +6,15 @@
 //  Copyright © 2015 https://github.com/ChenYilong . All rights reserved.
 //
 
-#import "BTPlusButton.h"
-#import "BTTabBarController.h"
+#import "ZZPlusButton.h"
+#import "ZZTabBarController.h"
 
 UIButton<CYLPlusButtonSubclassing> *CYLExternPushlishButton = nil;
-@interface BTPlusButton ()<UIActionSheetDelegate>
+@interface ZZPlusButton ()<UIActionSheetDelegate>
 
 @end
 
-@implementation BTPlusButton
+@implementation ZZPlusButton
 
 #pragma mark -
 #pragma mark - Private Methods
