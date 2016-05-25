@@ -8,6 +8,6 @@
 
 #import "ZZPlusButton.h"
 
-@interface ZZPlusButtonSubClass : ZZPlusButton <ZZPlusButtonSubClassing>
+@interface ZZPlusButtonSubClass : ZZPlusButton <CYLPlusButtonSubclassing>
 
 @end

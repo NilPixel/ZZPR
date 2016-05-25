@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E1ABAD81CF5F62E00960224 /* BoPhotoGroupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1ABACC1CF5F62E00960224 /* BoPhotoGroupCell.m */; };
+		0E1ABAD91CF5F62E00960224 /* BoPhotoGroupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1ABACE1CF5F62E00960224 /* BoPhotoGroupView.m */; };
+		0E1ABADA1CF5F62E00960224 /* BoPhotoListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1ABAD01CF5F62E00960224 /* BoPhotoListCell.m */; };
+		0E1ABADB1CF5F62E00960224 /* BoPhotoListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1ABAD21CF5F62E00960224 /* BoPhotoListView.m */; };
+		0E1ABADC1CF5F62E00960224 /* BoPhotoPicker.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0E1ABAD31CF5F62E00960224 /* BoPhotoPicker.bundle */; };
+		0E1ABADD1CF5F62E00960224 /* BoPhotoPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1ABAD51CF5F62E00960224 /* BoPhotoPickerViewController.m */; };
+		0E1ABADE1CF5F62E00960224 /* BoTapAssetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1ABAD71CF5F62E00960224 /* BoTapAssetView.m */; };
 		0E1E20BB1CBA5C5E0032723A /* ZZNoHLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1E20BA1CBA5C5E0032723A /* ZZNoHLButton.m */; };
 		0E1E20BE1CBA76030032723A /* ZZHomePageData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1E20BD1CBA76030032723A /* ZZHomePageData.m */; };
 		0E1E20C11CBA84580032723A /* ZZHomeTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1E20C01CBA84580032723A /* ZZHomeTopic.m */; };
@@ -91,6 +98,19 @@
 
 /* Begin PBXFileReference section */
 		07284B80213411EA71E53478 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		0E1ABACB1CF5F62E00960224 /* BoPhotoGroupCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoPhotoGroupCell.h; sourceTree = "<group>"; };
+		0E1ABACC1CF5F62E00960224 /* BoPhotoGroupCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoPhotoGroupCell.m; sourceTree = "<group>"; };
+		0E1ABACD1CF5F62E00960224 /* BoPhotoGroupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoPhotoGroupView.h; sourceTree = "<group>"; };
+		0E1ABACE1CF5F62E00960224 /* BoPhotoGroupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoPhotoGroupView.m; sourceTree = "<group>"; };
+		0E1ABACF1CF5F62E00960224 /* BoPhotoListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoPhotoListCell.h; sourceTree = "<group>"; };
+		0E1ABAD01CF5F62E00960224 /* BoPhotoListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoPhotoListCell.m; sourceTree = "<group>"; };
+		0E1ABAD11CF5F62E00960224 /* BoPhotoListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoPhotoListView.h; sourceTree = "<group>"; };
+		0E1ABAD21CF5F62E00960224 /* BoPhotoListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoPhotoListView.m; sourceTree = "<group>"; };
+		0E1ABAD31CF5F62E00960224 /* BoPhotoPicker.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BoPhotoPicker.bundle; sourceTree = "<group>"; };
+		0E1ABAD41CF5F62E00960224 /* BoPhotoPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoPhotoPickerViewController.h; sourceTree = "<group>"; };
+		0E1ABAD51CF5F62E00960224 /* BoPhotoPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoPhotoPickerViewController.m; sourceTree = "<group>"; };
+		0E1ABAD61CF5F62E00960224 /* BoTapAssetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoTapAssetView.h; sourceTree = "<group>"; };
+		0E1ABAD71CF5F62E00960224 /* BoTapAssetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoTapAssetView.m; sourceTree = "<group>"; };
 		0E1E20B91CBA5C5E0032723A /* ZZNoHLButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZNoHLButton.h; sourceTree = "<group>"; };
 		0E1E20BA1CBA5C5E0032723A /* ZZNoHLButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZNoHLButton.m; sourceTree = "<group>"; };
 		0E1E20BC1CBA76030032723A /* ZZHomePageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZHomePageData.h; sourceTree = "<group>"; };
@@ -247,6 +267,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E1ABACA1CF5F61300960224 /* BoPhotoPicker */ = {
+			isa = PBXGroup;
+			children = (
+				0E1ABACB1CF5F62E00960224 /* BoPhotoGroupCell.h */,
+				0E1ABACC1CF5F62E00960224 /* BoPhotoGroupCell.m */,
+				0E1ABACD1CF5F62E00960224 /* BoPhotoGroupView.h */,
+				0E1ABACE1CF5F62E00960224 /* BoPhotoGroupView.m */,
+				0E1ABACF1CF5F62E00960224 /* BoPhotoListCell.h */,
+				0E1ABAD01CF5F62E00960224 /* BoPhotoListCell.m */,
+				0E1ABAD11CF5F62E00960224 /* BoPhotoListView.h */,
+				0E1ABAD21CF5F62E00960224 /* BoPhotoListView.m */,
+				0E1ABAD31CF5F62E00960224 /* BoPhotoPicker.bundle */,
+				0E1ABAD41CF5F62E00960224 /* BoPhotoPickerViewController.h */,
+				0E1ABAD51CF5F62E00960224 /* BoPhotoPickerViewController.m */,
+				0E1ABAD61CF5F62E00960224 /* BoTapAssetView.h */,
+				0E1ABAD71CF5F62E00960224 /* BoTapAssetView.m */,
+			);
+			path = BoPhotoPicker;
+			sourceTree = "<group>";
+		};
 		0E324B5D1CA8320700A4B39B = {
 			isa = PBXGroup;
 			children = (
@@ -515,6 +555,7 @@
 		E6037C2B1CA8CED800B3BED0 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				0E1ABACA1CF5F61300960224 /* BoPhotoPicker */,
 				E69058F01CE5CD0200F4924E /* CLYTabBarController */,
 				0EDAC2641CC67D850089FEA0 /* Store */,
 				0EEAEBD51CBBE9560008F86A /* PullToRefreshCoreText */,
@@ -764,6 +805,7 @@
 				0E75E3691CE7063B00B5144E /* ZZLoginVC.xib in Resources */,
 				0EEAEBDB1CBBE9BC0008F86A /* Mask.png in Resources */,
 				0E324B791CA8320700A4B39B /* LaunchScreen.storyboard in Resources */,
+				0E1ABADC1CF5F62E00960224 /* BoPhotoPicker.bundle in Resources */,
 				0E324B761CA8320700A4B39B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -840,12 +882,14 @@
 				E6EEF2991CAA54CE00855540 /* ZZPhotoGroupView.m in Sources */,
 				E6EEF2A51CAA6ECB00855540 /* ZZPhotoListViewCell.m in Sources */,
 				0E3A65481CC1CF1B00D7F836 /* ZZTag.m in Sources */,
+				0E1ABAD81CF5F62E00960224 /* BoPhotoGroupCell.m in Sources */,
 				0EEAEBDD1CBBE9BC0008F86A /* UIScrollView+PullToRefreshCoreText.m in Sources */,
 				0E75E35D1CE703E000B5144E /* ZZPlusButton.m in Sources */,
 				0E1E20C71CBA88FE0032723A /* ZZFirstPageElement.m in Sources */,
 				E6EEF2961CAA1F6800855540 /* ZZPhotoGroupCell.m in Sources */,
 				E69058E31CE5B88C00F4924E /* ZZHomeTopicCell.m in Sources */,
 				E6EEF2A81CAA75B400855540 /* ZZTapAssetView.m in Sources */,
+				0E1ABADE1CF5F62E00960224 /* BoTapAssetView.m in Sources */,
 				E6D26D621CBB4C6F00C4A74F /* ZZLoadingView.m in Sources */,
 				E69058DB1CE5B06B00F4924E /* RMPZoomTransitionAnimator.m in Sources */,
 				0E3A654E1CC1D65800D7F836 /* ZZTopicNewInfo.m in Sources */,
@@ -858,6 +902,7 @@
 				0EDAC2671CC67DA10089FEA0 /* ZZDataBaseManager.m in Sources */,
 				E6037C381CA90BA300B3BED0 /* ZZPlusButtonSubClass.m in Sources */,
 				0E75E3631CE7042E00B5144E /* ZZTabBarController.m in Sources */,
+				0E1ABADB1CF5F62E00960224 /* BoPhotoListView.m in Sources */,
 				0EA99F4B1CCC6C0B006CD370 /* ZZDBHelper.m in Sources */,
 				0EEAEBEA1CBBEE650008F86A /* ZZSubjectAuthor.m in Sources */,
 				0E3A65421CC1CBA200D7F836 /* ZZListPostDynamic.m in Sources */,
@@ -876,6 +921,7 @@
 				E6EEF29F1CAA659700855540 /* ZZPhotoGroupViewController.m in Sources */,
 				0EEAEBE41CBBEE100008F86A /* ZZCommunitySubject.m in Sources */,
 				0EEAEBE11CBBEBF10008F86A /* ZZHomePageManager.m in Sources */,
+				0E1ABADA1CF5F62E00960224 /* BoPhotoListCell.m in Sources */,
 				E6037C2F1CA8CF2E00B3BED0 /* ZZTabBarController.m in Sources */,
 				0EEAEBE71CBBEE500008F86A /* ZZSubjectDynamic.m in Sources */,
 				0EFBC39A1CB6A8DB00C4E8DA /* ZZHomeBanner.m in Sources */,
@@ -884,9 +930,11 @@
 				E6D26D651CBB8F0F00C4A74F /* ZZPageLoadFooterView.m in Sources */,
 				0EF66DF21CB7F6B000C67A38 /* ZZEntryList.m in Sources */,
 				E69058EF1CE5C9D500F4924E /* ZZProfileVC.m in Sources */,
+				0E1ABAD91CF5F62E00960224 /* BoPhotoGroupView.m in Sources */,
 				E69058D71CE5AF4600F4924E /* ZZHomePushTransitionVC.m in Sources */,
 				0E6714F41CC32D210042A820 /* ZZSubscribeTag.m in Sources */,
 				0E3A654B1CC1CFAE00D7F836 /* ZZListPostPics.m in Sources */,
+				0E1ABADD1CF5F62E00960224 /* BoPhotoPickerViewController.m in Sources */,
 				0EFBC3961CB6A01000C4E8DA /* ZZHomePageHeaderView.m in Sources */,
 				E69058DE1CE5B09D00F4924E /* ZZNavigationController.m in Sources */,
 				E6037C351CA902D300B3BED0 /* ZZPlusButton.m in Sources */,

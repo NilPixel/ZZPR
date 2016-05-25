@@ -28,26 +28,33 @@
         ZZNavigationController *firstNavigationController = [[ZZNavigationController alloc]initWithRootViewController:homeVC];
         
         ZZCommunityVC *communityVC = [[ZZCommunityVC alloc]init];
-        homeVC.title = @"发现";
+        communityVC.title = @"发现";
         ZZNavigationController *secondNavigationController = [[ZZNavigationController alloc]initWithRootViewController:communityVC];
         
         ZZMessageVC *messageVC = [[ZZMessageVC alloc]init];
-        homeVC.title = @"消息";
+        messageVC.title = @"消息";
         ZZNavigationController *thirdNavigationController = [[ZZNavigationController alloc]initWithRootViewController:messageVC];
         
         ZZProfileVC *profileVC = [[ZZProfileVC alloc]init];
-        homeVC.title = @"我";
+        profileVC.title = @"我";
         ZZNavigationController *fourthNavigationController = [[ZZNavigationController alloc]initWithRootViewController:profileVC];
         ZZTabBarController *tabbarController = [[ZZTabBarController alloc]init];
+        [self customizeTabBarForController:tabbarController];
+        tabbarController.viewControllers = @[firstNavigationController,
+                                             secondNavigationController,
+                                             thirdNavigationController,
+                                             fourthNavigationController];
+        _tabBarController = tabbarController;
         
     }
+    return _tabBarController;
 }
 /*
  *
  在`-setViewControllers:`之前设置TabBar的属性，
  *
  */
-- (void)customizeTabBarForController:(BTTabBarController *)tabBarController {
+- (void)customizeTabBarForController:(ZZTabBarController *)tabBarController {
     
     NSDictionary *dict1 = @{
                             CYLTabBarItemTitle : @"",
@@ -85,7 +92,7 @@
     
     // 选中状态下的文字属性
     NSMutableDictionary *selectedAttrs = [NSMutableDictionary dictionary];
-    selectedAttrs[NSForegroundColorAttributeName] = BTGobalRedColor;
+    selectedAttrs[NSForegroundColorAttributeName] = ZZGobalRedColor;
     
     // 设置文字属性
     UITabBarItem *tabBar = [UITabBarItem appearance];
