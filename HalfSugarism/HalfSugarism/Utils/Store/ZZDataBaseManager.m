@@ -52,4 +52,58 @@ static NSString * const bannerTableName = @"BANNERTABLEV2";
         [db executeUpdate:insertSql,data,[NSNumber numberWithInteger:page]];
     }];
 }
+// 获取homePageData
+- (ZZHomePageData *)getPageDataWithPage:(NSInteger)page
+{
+    __block ZZHomePageData * homePageData = nil;
+    __block NSData *data = nil;
+    FMDatabaseQueue *queue = [ZZDBHelper getDataBaseQueue];
+    if (queue==nil) {
+        return nil;
+    }
+    [queue inDatabase:^(FMDatabase *db) {
+        FMResultSet *rs = [db executeQuery:@"SELECT * FROM HOMETABLE where page = ?",[NSNumber numberWithInteger:page]];
+        while ([rs next]) {
+            data = [rs dataForColumn:@"data"];
+            
+            homePageData = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+        }
+        [rs close];
+    }];
+    
+    return  homePageData;
+}
+
+// 插入bannerData
+- (void)inserthomeBannerDataToDB:(NSArray *)pageDataArray
+{
+    NSString *insertSql = @"REPLACE INTO BANNERTABLEV2 (data) VALUES (?)";
+    
+    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:pageDataArray];
+    
+    FMDatabaseQueue *queue = [ZZDBHelper getDataBaseQueue];
+    
+    [queue inDatabase:^(FMDatabase *db) {
+        [db executeUpdate:insertSql,data];
+    }];
+    
+}
+// 获取bannerData
+- (NSArray *)getbannerData
+{
+    __block NSArray *array = nil;
+    FMDatabaseQueue *queue = [ZZDBHelper getDataBaseQueue];
+    if (queue==nil) {
+        return nil;
+    }
+    [queue inDatabase:^(FMDatabase *db) {
+        FMResultSet *rs = [db executeQuery:@"SELECT * FROM BANNERTABLEV2"];
+        while ([rs next]) {
+            NSData *data = [rs dataForColumn:@"data"];
+            array = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+        }
+        [rs close];
+    }];
+    return array;
+}
 @end

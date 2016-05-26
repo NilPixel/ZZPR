@@ -19,6 +19,7 @@
 		0E1E20C11CBA84580032723A /* ZZHomeTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1E20C01CBA84580032723A /* ZZHomeTopic.m */; };
 		0E1E20C41CBA88190032723A /* ZZCategoryElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1E20C31CBA88190032723A /* ZZCategoryElement.m */; };
 		0E1E20C71CBA88FE0032723A /* ZZFirstPageElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1E20C61CBA88FE0032723A /* ZZFirstPageElement.m */; };
+		0E25EACF1CF74655008D5CDD /* ZZProductListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E25EACE1CF74655008D5CDD /* ZZProductListVC.m */; };
 		0E324B6B1CA8320700A4B39B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E324B6A1CA8320700A4B39B /* main.m */; };
 		0E324B761CA8320700A4B39B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E324B751CA8320700A4B39B /* Assets.xcassets */; };
 		0E324B791CA8320700A4B39B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E324B771CA8320700A4B39B /* LaunchScreen.storyboard */; };
@@ -121,6 +122,8 @@
 		0E1E20C31CBA88190032723A /* ZZCategoryElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZCategoryElement.m; sourceTree = "<group>"; };
 		0E1E20C51CBA88FE0032723A /* ZZFirstPageElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZFirstPageElement.h; sourceTree = "<group>"; };
 		0E1E20C61CBA88FE0032723A /* ZZFirstPageElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZFirstPageElement.m; sourceTree = "<group>"; };
+		0E25EACD1CF74655008D5CDD /* ZZProductListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZProductListVC.h; sourceTree = "<group>"; };
+		0E25EACE1CF74655008D5CDD /* ZZProductListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZProductListVC.m; sourceTree = "<group>"; };
 		0E324B661CA8320700A4B39B /* HalfSugarism.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HalfSugarism.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E324B6A1CA8320700A4B39B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0E324B751CA8320700A4B39B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -287,6 +290,15 @@
 			path = BoPhotoPicker;
 			sourceTree = "<group>";
 		};
+		0E25EACC1CF7462D008D5CDD /* ProductList */ = {
+			isa = PBXGroup;
+			children = (
+				0E25EACD1CF74655008D5CDD /* ZZProductListVC.h */,
+				0E25EACE1CF74655008D5CDD /* ZZProductListVC.m */,
+			);
+			path = ProductList;
+			sourceTree = "<group>";
+		};
 		0E324B5D1CA8320700A4B39B = {
 			isa = PBXGroup;
 			children = (
@@ -418,6 +430,7 @@
 		0EFBC38C1CB69D7300C4E8DA /* Pages */ = {
 			isa = PBXGroup;
 			children = (
+				0E25EACC1CF7462D008D5CDD /* ProductList */,
 				E69058EC1CE5C9C100F4924E /* Mine */,
 				E69058E81CE5C99600F4924E /* Message */,
 				E69058E41CE5C58800F4924E /* Community */,
@@ -913,6 +926,7 @@
 				E69058E71CE5C96000F4924E /* ZZCommunityVC.m in Sources */,
 				0EC8AC061CBD40E2009AC336 /* ZZSubjectRankAuthor.m in Sources */,
 				E6D26D691CBB9D9900C4A74F /* UINavigationBar+Awesome.m in Sources */,
+				0E25EACF1CF74655008D5CDD /* ZZProductListVC.m in Sources */,
 				0E1E20BB1CBA5C5E0032723A /* ZZNoHLButton.m in Sources */,
 				0E75E3601CE703FD00B5144E /* ZZTabBar.m in Sources */,
 				0EE4EABD1CBE925C003FD6C1 /* ZZSubjectListPostParams.m in Sources */,

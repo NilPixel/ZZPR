@@ -14,6 +14,10 @@
 #import "ZZPageLoadFooterView.h"
 #import "UINavigationBar+Awesome.h"
 #import "UIScrollView+PullToRefreshCoreText.h"
+#import "ZZDataBaseManager.h"
+#import "ZZHomeTopicCell.h"
+#import "ZZHomeTopic.h"
+#import "ZZProductListVC.h"
 #define NAVBAR_CHANGE_POINT 50
 @interface ZZHomeVC ()<UITableViewDelegate,UITableViewDataSource,ZZHomePageHeaderViewDelegate>
 @property (nonatomic, strong)ZZHomePageHeaderView *homePagewHeaderView;
@@ -23,6 +27,7 @@
 @property (nonatomic, strong)ZZLoadingView *loadingView;//加载loadingView
 @property (nonatomic, strong)ZZPageLoadFooterView *pageLoadFooterView;//footerView
 @property (nonatomic, assign)BOOL isFinishLoadedData;
+/** navigationBar的alpha值 */
 @property (nonatomic, assign)CGFloat navigationBarAlpha;
 
 @end
@@ -99,11 +104,26 @@
     if (boolean) {
         self.page = 0;
     }
-    [ZZHomePageManager getHomePageDataWithPage:self.page successHandler:^(ZZHomePageData *pageData) {
-        <#code#>
-    } failureHandler:^(NSError *error) {
-        <#code#>
-    }]
+        [ZZHomePageManager getHomePageDataWithPage:self.page successHandler:^(ZZHomePageData *pageData) {
+            [[ZZDataBaseManager shareInstance] insertHomePageDataToDB:pageData page:self.page];
+            [self hideLoading];
+            if (boolean) {
+                [self.dataArray removeAllObjects];
+                self.homePageData = pageData;
+                self.homePagewHeaderView.bannerImageArray = pageData.banner;
+                self.homePagewHeaderView.listImageArray = pageData.entryList;
+            }
+            if (pageData.topic.count == 0) {
+                return ;
+            }
+            self.isFinishLoadedData = pageData.topic.count < 10;
+            [self.dataArray addObjectsFromArray:pageData.topic];
+            [self.tableView setHidden:NO];
+            [self.tableView reloadData];
+            self.page++;
+        } failureHandler:^(NSError *error) {
+            [self hideLoading];
+        }];
 }
 #pragma mark - event responseder
 
@@ -117,11 +137,151 @@
     
 }
 
-- (void)loadDataFromStart:(BOOL)boolean
+- (void)hideLoading
 {
-    if (boolean) {
-        self.page = 0;
+    [self.loadingView hideAnimation];
+    [self.tableView finishLoading];
+    [self.pageLoadFooterView endRefreshing];
+}
+- (ZZHomePageHeaderView *)homePagewHeaderView
+{
+    if (!_homePagewHeaderView) {
+        _homePagewHeaderView = [[ZZHomePageHeaderView alloc]initWithBannerImageArray:nil entryListImageArray:self.homePageData.entryList];
+        _homePagewHeaderView.frame = CGRectMake(0, 0, kScreen_Width, 308);
+        _homePagewHeaderView.delegate = self;
+        [self.view addSubview:_homePagewHeaderView];
+    }
+    return _homePagewHeaderView;
+}
+#pragma mark - tableView DataSource && tableView Delegate
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.dataArray.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    ZZHomeTopicCell *cell = [ZZHomeTopicCell cellWithTableView:tableView];
+    cell.topic = self.dataArray[indexPath.row];
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    ZZHomeTopic *topic = self.dataArray[indexPath.row];
+    ZZProductListVC *productListVC = [[ZZProductListVC alloc] init];
+    productListVC.extendID = [NSString stringWithFormat:@"%zd",topic.tid];
+    [self.navigationController pushViewController:productListVC animated:YES];
+}
+// 用于加载更多
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.row == self.dataArray.count - 1) {
+        if (self.isFinishLoadedData) return;
+        [self.pageLoadFooterView startRefreshing];
+    }
+}
+#pragma mark - BTHomePageHeaderViewDelegate
+- (void)headerView:(BTHomePageHeaderView *)headerView didClickBannerViewWithIndex:(NSInteger)index
+{
+    BTHomeBanner *banner = self.homePageData.banner[index];
+    if (![banner.type isEqualToString:@"webview"]) {
+        BTTopicListVC *listVC = [[BTTopicListVC alloc] init];
+        listVC.extend = banner.extend;
+        listVC.title = banner.title;
+        [self.navigationController pushViewController:listVC animated:YES];
+    }else if ([banner.type isEqualToString:@"webview"])
+    {
+        BTWebViewVC *webViewVC = [[BTWebViewVC alloc] init];
+        webViewVC.url = banner.extend;
+        webViewVC.title = banner.title;
+        webViewVC.isModalStyle = NO;
+        [self.navigationController pushViewController:webViewVC animated:YES];
+    }
+}
+
+- (void)headerView:(BTHomePageHeaderView *)headerView didClickEntryListWithIndex:(NSInteger)index
+{
+    BTEntryList *entryList = self.homePageData.entryList[index];
+    BTSubjectVC *subjectVC = [[BTSubjectVC alloc] init];
+    if (entryList.extend.length) {
+        subjectVC.extendId = [entryList.extend integerValue];
+        [self.navigationController pushViewController:subjectVC animated:YES];
+    }
+}
+
+- (void)headerViewDidClickLeftButton:(ZZHomePageHeaderView *)headerView
+{
+    BTSubscribeVC *subscribeVC = [[BTSubscribeVC alloc] init];
+    [self.navigationController pushViewController:subscribeVC animated:YES];
+}
+
+- (void)headerViewDidClickRightButton:(ZZHomePageHeaderView *)headerView
+{
+    
+}
+#pragma mark - scrollViewDelegate
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    // 100开始显示
+    // 180显示完全
+    CGFloat offsetY = scrollView.contentOffset.y;
+    CGFloat alpha = 0;
+    
+    if (offsetY > NAVBAR_CHANGE_POINT) {
+        alpha = MIN(1, 1 - ((NAVBAR_CHANGE_POINT + 64 - offsetY) / 64));
     }
     
+    if (alpha>0) {
+        [self.navigationItem.titleView setHidden:NO];
+        [self.navigationItem.leftBarButtonItem.customView setHidden:NO];
+        [self.navigationItem.rightBarButtonItem.customView setHidden:NO];
+    }
+    
+    [self.navigationController.navigationBar lt_setBackgroundColor:[BTGobalRedColor colorWithAlphaComponent:alpha]];
+    [self.navigationItem.titleView setAlpha:alpha];
+    [self.navigationItem.leftBarButtonItem.customView setAlpha:alpha];
+    [self.navigationItem.rightBarButtonItem.customView setAlpha:alpha];
+    self.navigationBarAlpha = alpha;
+}
+
+#pragma mark - getter Method
+- (UITableView *)tableView
+{
+    if (!_tableView) {
+        _tableView = [[UITableView alloc] initWithFrame:self.view.bounds
+                                                  style:UITableViewStylePlain];
+        _tableView.delegate = self;
+        _tableView.dataSource = self;
+        _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        _tableView.showsVerticalScrollIndicator = NO;
+        _tableView.rowHeight = 264;
+        _tableView.height -= 49;
+        _tableView.tableHeaderView = self.headerView;
+        [_tableView setHidden:YES];
+    }
+    return _tableView;
+}
+
+- (NSMutableArray *)dataArray
+{
+    if (!_dataArray) {
+        _dataArray = [NSMutableArray array];
+    }
+    return _dataArray;
+}
+
+- (ZZLoadingView *)loadingView
+{
+    if (!_loadingView) {
+        _loadingView = [ZZLoadingView loadingViewToView:self.view];
+        [_loadingView startAnimation];
+    }
+    return _loadingView;
 }
 @end
