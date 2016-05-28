@@ -12,7 +12,7 @@
 #import "ZZTabBarController.h"
 #import "ZZNavigationController.h"
 #import "BoPhotoPickerViewController.h"
-@interface ZZPlusButtonSubClass () <UIImagePickerControllerDelegate,UINavigationControllerDelegate>
+@interface ZZPlusButtonSubClass () <UIImagePickerControllerDelegate,UINavigationControllerDelegate,BoPhotoPickerProtocol>
 {
     CGFloat _buttonImageHeight;
 }
@@ -24,7 +24,7 @@
 
 + (void)load
 {
-    [super registerSubClass];
+    [super registerSubclass];
 }
 
 - (instancetype)initWithFrame:(CGRect)frame
@@ -69,9 +69,9 @@
         return YES;
     }];
     
-    BTTabBarController *rootVC = (BTTabBarController *)[UIApplication sharedApplication].keyWindow.rootViewController;
-    BTNavigationController *nav = rootVC.selectedViewController;
-    BTNavigationController *nav2 = [[BTNavigationController alloc] initWithRootViewController:picker];
+    ZZTabBarController *rootVC = (ZZTabBarController *)[UIApplication sharedApplication].keyWindow.rootViewController;
+    ZZNavigationController *nav = rootVC.selectedViewController;
+    ZZNavigationController *nav2 = [[ZZNavigationController alloc] initWithRootViewController:picker];
     [nav.viewControllers[0] presentViewController:nav2 animated:YES completion:nil];
 }
 
@@ -118,8 +118,8 @@
     cameraUI.sourceType = UIImagePickerControllerSourceTypeCamera;
     cameraUI.cameraFlashMode=UIImagePickerControllerCameraFlashModeAuto;
     
-    BTTabBarController *rootVC = (BTTabBarController *)[UIApplication sharedApplication].keyWindow.rootViewController;
-    BTNavigationController *nav = rootVC.selectedViewController;
+    ZZTabBarController *rootVC = (ZZTabBarController *)[UIApplication sharedApplication].keyWindow.rootViewController;
+    ZZNavigationController *nav = rootVC.selectedViewController;
     
     [nav presentViewController:cameraUI animated: YES completion:nil];
 }
@@ -145,8 +145,8 @@
     }
     self.imageView.image = originalImage;
     
-    BTTabBarController *rootVC = (BTTabBarController *)[UIApplication sharedApplication].keyWindow.rootViewController;
-    BTNavigationController *nav = rootVC.selectedViewController;
+    ZZTabBarController *rootVC = (ZZTabBarController *)[UIApplication sharedApplication].keyWindow.rootViewController;
+    ZZNavigationController *nav = rootVC.selectedViewController;
     [nav dismissViewControllerAnimated:YES completion:nil];
 }
 

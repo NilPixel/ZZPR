@@ -18,7 +18,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     self.window.rootViewController = [[ZZTabbarControllerConfig alloc]init].tabBarController;
-    [self.window makeKeyWindow];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

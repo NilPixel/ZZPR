@@ -18,6 +18,12 @@
 #import "ZZHomeTopicCell.h"
 #import "ZZHomeTopic.h"
 #import "ZZProductListVC.h"
+#import "ZZHomeBanner.h"
+#import "ZZTopicListVC.h"
+#import "ZZWebViewVC.h"
+#import "ZZEntryList.h"
+#import "ZZSubjectVC.h"
+#import "ZZSubscribeVC.h"
 #define NAVBAR_CHANGE_POINT 50
 @interface ZZHomeVC ()<UITableViewDelegate,UITableViewDataSource,ZZHomePageHeaderViewDelegate>
 @property (nonatomic, strong)ZZHomePageHeaderView *homePagewHeaderView;
@@ -187,28 +193,28 @@
     }
 }
 #pragma mark - BTHomePageHeaderViewDelegate
-- (void)headerView:(BTHomePageHeaderView *)headerView didClickBannerViewWithIndex:(NSInteger)index
+- (void)headerView:(ZZHomePageHeaderView *)headerView didClickBannerViewWithIndex:(NSInteger)index
 {
-    BTHomeBanner *banner = self.homePageData.banner[index];
+    ZZHomeBanner *banner = self.homePageData.banner[index];
     if (![banner.type isEqualToString:@"webview"]) {
-        BTTopicListVC *listVC = [[BTTopicListVC alloc] init];
+        ZZTopicListVC *listVC = [[ZZTopicListVC alloc] init];
         listVC.extend = banner.extend;
         listVC.title = banner.title;
         [self.navigationController pushViewController:listVC animated:YES];
     }else if ([banner.type isEqualToString:@"webview"])
     {
-        BTWebViewVC *webViewVC = [[BTWebViewVC alloc] init];
+        ZZWebViewVC *webViewVC = [[ZZWebViewVC alloc] init];
         webViewVC.url = banner.extend;
         webViewVC.title = banner.title;
-        webViewVC.isModalStyle = NO;
+        webViewVC.isModelStyle = NO;
         [self.navigationController pushViewController:webViewVC animated:YES];
     }
 }
 
-- (void)headerView:(BTHomePageHeaderView *)headerView didClickEntryListWithIndex:(NSInteger)index
+- (void)headerView:(ZZHomePageHeaderView *)headerView didClickEntryListWithIndex:(NSInteger)index
 {
-    BTEntryList *entryList = self.homePageData.entryList[index];
-    BTSubjectVC *subjectVC = [[BTSubjectVC alloc] init];
+    ZZEntryList *entryList = self.homePageData.entryList[index];
+    ZZSubjectVC *subjectVC = [[ZZSubjectVC alloc] init];
     if (entryList.extend.length) {
         subjectVC.extendId = [entryList.extend integerValue];
         [self.navigationController pushViewController:subjectVC animated:YES];
@@ -217,7 +223,7 @@
 
 - (void)headerViewDidClickLeftButton:(ZZHomePageHeaderView *)headerView
 {
-    BTSubscribeVC *subscribeVC = [[BTSubscribeVC alloc] init];
+    ZZSubscribeVC *subscribeVC = [[ZZSubscribeVC alloc] init];
     [self.navigationController pushViewController:subscribeVC animated:YES];
 }
 
@@ -243,7 +249,7 @@
         [self.navigationItem.rightBarButtonItem.customView setHidden:NO];
     }
     
-    [self.navigationController.navigationBar lt_setBackgroundColor:[BTGobalRedColor colorWithAlphaComponent:alpha]];
+    [self.navigationController.navigationBar lt_setBackgroundColor:[ZZGobalRedColor colorWithAlphaComponent:alpha]];
     [self.navigationItem.titleView setAlpha:alpha];
     [self.navigationItem.leftBarButtonItem.customView setAlpha:alpha];
     [self.navigationItem.rightBarButtonItem.customView setAlpha:alpha];
@@ -262,7 +268,7 @@
         _tableView.showsVerticalScrollIndicator = NO;
         _tableView.rowHeight = 264;
         _tableView.height -= 49;
-        _tableView.tableHeaderView = self.headerView;
+        _tableView.tableHeaderView = self.homePagewHeaderView;
         [_tableView setHidden:YES];
     }
     return _tableView;
