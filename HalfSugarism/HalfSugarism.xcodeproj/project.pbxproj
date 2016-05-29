@@ -808,6 +808,7 @@
 				TargetAttributes = {
 					0E324B651CA8320700A4B39B = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = Z9AH4A4F7A;
 					};
 					0E324B7E1CA8320700A4B39B = {
 						CreatedOnToolsVersion = 7.3;
@@ -1118,6 +1119,7 @@
 			baseConfigurationReference = 5C1E854674F250F0D8F8799C /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/HalfSugarism/ZZHalfSugarrismPrefixHeader.pch";
 				INFOPLIST_FILE = HalfSugarism/Info.plist;
@@ -1133,6 +1135,7 @@
 			baseConfigurationReference = 07284B80213411EA71E53478 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/HalfSugarism/ZZHalfSugarrismPrefixHeader.pch";
 				INFOPLIST_FILE = HalfSugarism/Info.plist;

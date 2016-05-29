@@ -42,6 +42,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self setUpSubViews];
+    [self loadDataFromStart:YES];
     
 }
 
