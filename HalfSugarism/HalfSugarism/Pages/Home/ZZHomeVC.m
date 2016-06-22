@@ -72,13 +72,13 @@
 
 - (void)setUpSubViews
 {
-    self.navigationItem.titleView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@""]];
-    self.navigationItem.leftBarButtonItem = [UIBarButtonItem rx_barBtnItemWithNmlImg:@""
-                                                                              hltImg:@""
+    self.navigationItem.titleView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"nar_logo"]];
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem rx_barBtnItemWithNmlImg:@"home_search_icon"
+                                                                              hltImg:@"home_search_icon"
                                                                               target:self
                                                                               action:@selector(searchBtnClick)];
-    self.navigationItem.rightBarButtonItem = [UIBarButtonItem rx_barBtnItemWithNmlImg:@""
-                                                                               hltImg:@""
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem rx_barBtnItemWithNmlImg:@"sign_bar_icon"
+                                                                               hltImg:@"sign_bar_icon"
                                                                                target:self
                                                                                action:@selector(signBtnClick)];
     
